@@ -1,0 +1,22 @@
+namespace StreetNameRegistry.Tests.Assert
+{
+    using FluentAssertions;
+    using StreetName.Events;
+
+    public class StreetNameHomonymAdditionWasClearedAssertions :
+        HasStreetNameIdAssertions<StreetNameHomonymAdditionWasCleared, StreetNameHomonymAdditionWasClearedAssertions>
+    {
+        public StreetNameHomonymAdditionWasClearedAssertions(StreetNameHomonymAdditionWasCleared subject) : base(subject)
+        {
+        }
+
+        public AndConstraint<StreetNameHomonymAdditionWasClearedAssertions> HaveLanguage(Language language)
+        {
+            AssertingThat($"the Language is {language}");
+
+            Subject.Language.Should().Be(language);
+
+            return And();
+        }
+    }
+}
