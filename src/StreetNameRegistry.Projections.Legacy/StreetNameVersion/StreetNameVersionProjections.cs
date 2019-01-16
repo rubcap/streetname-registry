@@ -10,10 +10,11 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameVersion
     public static class StreetNameVersionQueries
     {
         public static IQueryable<StreetNameVersion> AllVersions(this LegacyContext context, Guid streetNameId)
-        {
-            // TODO: Should we add .StreetNameVersions.Local in here?
-            return context.StreetNameVersions.Where(x => x.StreetNameId == streetNameId);
-        }
+            => context
+                .StreetNameVersions.Where(x => x.StreetNameId == streetNameId)
+                .Union(context
+                .StreetNameVersions.Local.Where(x => x.StreetNameId == streetNameId))
+                .Distinct();
     }
 
     public class StreetNameVersionProjections : ConnectedProjection<LegacyContext>
@@ -36,6 +37,14 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameVersion
                 await context
                     .StreetNameVersions
                     .AddAsync(streetNameVersionItem, ct);
+            });
+
+            When<Envelope<StreetNameOsloIdWasAssigned>>(async (context, message, ct) =>
+            {
+                var entities = await context.AllVersions(message.Message.StreetNameId).ToListAsync(ct);
+
+                foreach (var entity in entities)
+                    entity.OsloId = message.Message.OsloId;
             });
 
             When<Envelope<StreetNameNameWasNamed>>(async (context, message, ct) =>
@@ -135,14 +144,6 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameVersion
                     message,
                     version => version.Removed = true,
                     ct);
-            });
-
-            When<Envelope<StreetNameOsloIdWasAssigned>>(async (context, message, ct) =>
-            {
-                var entities = await context.AllVersions(message.Message.StreetNameId).ToListAsync(ct);
-
-                foreach (var entity in entities)
-                    entity.OsloId = message.Message.OsloId;
             });
 
             When<Envelope<StreetNameBecameCurrent>>(async (context, message, ct) =>

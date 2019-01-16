@@ -14,6 +14,22 @@ namespace StreetNameRegistry.Projections.LastChangedList
         public Projections()
             : base (SupportedAcceptTypes)
         {
+            When<Envelope<StreetNameOsloIdWasAssigned>>(async (context, message, ct) =>
+            {
+                var attachedRecords = await GetLastChangedRecordsAndUpdatePosition(message.Message.StreetNameId.ToString(), message.Position, context, ct);
+
+                foreach (var record in attachedRecords)
+                {
+                    record.CacheKey = string.Format(record.CacheKey, message.Message.OsloId);
+                    record.Uri = string.Format(record.Uri, message.Message.OsloId);
+                }
+            });
+
+            When<Envelope<StreetNameWasRemoved>>(async (context, message, ct) =>
+            {
+                await GetLastChangedRecordsAndUpdatePosition(message.Message.StreetNameId.ToString(), message.Position, context, ct);
+            });
+
             When<Envelope<StreetNameWasRegistered>>(async (context, message, ct) =>
             {
                 await GetLastChangedRecordsAndUpdatePosition(message.Message.StreetNameId.ToString(), message.Position, context, ct);
@@ -67,22 +83,6 @@ namespace StreetNameRegistry.Projections.LastChangedList
             When<Envelope<StreetNameBecameIncomplete>>(async (context, message, ct) =>
             {
                 await GetLastChangedRecordsAndUpdatePosition(message.Message.StreetNameId.ToString(), message.Position, context, ct);
-            });
-
-            When<Envelope<StreetNameWasRemoved>>(async (context, message, ct) =>
-            {
-                await GetLastChangedRecordsAndUpdatePosition(message.Message.StreetNameId.ToString(), message.Position, context, ct);
-            });
-
-            When<Envelope<StreetNameOsloIdWasAssigned>>(async (context, message, ct) =>
-            {
-                var attachedRecords = await GetLastChangedRecordsAndUpdatePosition(message.Message.StreetNameId.ToString(), message.Position, context, ct);
-
-                foreach (var record in attachedRecords)
-                {
-                    record.CacheKey = string.Format(record.CacheKey, message.Message.OsloId);
-                    record.Uri = string.Format(record.Uri, message.Message.OsloId);
-                }
             });
 
             When<Envelope<StreetNameBecameCurrent>>(async (context, message, ct) =>
