@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.1.0...v1.1.1) (2019-01-16)
+
+
+### Bug Fixes
+
+* optimise catchup mode for versions ([4583327](https://github.com/informatievlaanderen/streetname-registry/commit/4583327))
+
 # [1.1.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.0.1...v1.1.0) (2019-01-16)
 
 
