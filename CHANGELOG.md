@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.1.1...v1.1.2) (2019-01-16)
+
+
+### Bug Fixes
+
+* required upgrade for datadog tracing to avoid connection pool problems ([432dbb4](https://github.com/informatievlaanderen/streetname-registry/commit/432dbb4))
+
 ## [1.1.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.1.0...v1.1.1) (2019-01-16)
 
 
