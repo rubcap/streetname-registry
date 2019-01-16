@@ -2,19 +2,36 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameVersion
 {
     using Be.Vlaanderen.Basisregisters.ProjectionHandling.Connector;
     using Be.Vlaanderen.Basisregisters.ProjectionHandling.SqlStreamStore;
-    using Microsoft.EntityFrameworkCore;
     using StreetName.Events;
     using System;
+    using System.Collections.Generic;
     using System.Linq;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using Microsoft.EntityFrameworkCore;
 
     public static class StreetNameVersionQueries
     {
-        public static IQueryable<StreetNameVersion> AllVersions(this LegacyContext context, Guid streetNameId)
-            => context
-                .StreetNameVersions.Where(x => x.StreetNameId == streetNameId)
-                .Union(context
-                .StreetNameVersions.Local.Where(x => x.StreetNameId == streetNameId))
+        public static async Task<IEnumerable<StreetNameVersion>> AllVersions(
+            this LegacyContext context,
+            Guid streetNameId,
+            CancellationToken cancellationToken)
+        {
+            var sqlEntities = await context
+                .StreetNameVersions
+                .Where(x => x.StreetNameId == streetNameId)
+                .ToListAsync(cancellationToken);
+
+            var localEntities = context
+                .StreetNameVersions
+                .Local
+                .Where(x => x.StreetNameId == streetNameId)
+                .ToList();
+
+            return sqlEntities
+                .Union(localEntities)
                 .Distinct();
+        }
     }
 
     public class StreetNameVersionProjections : ConnectedProjection<LegacyContext>
@@ -41,7 +58,7 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameVersion
 
             When<Envelope<StreetNameOsloIdWasAssigned>>(async (context, message, ct) =>
             {
-                var entities = await context.AllVersions(message.Message.StreetNameId).ToListAsync(ct);
+                var entities = await context.AllVersions(message.Message.StreetNameId, ct);
 
                 foreach (var entity in entities)
                     entity.OsloId = message.Message.OsloId;
