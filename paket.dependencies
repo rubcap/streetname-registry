@@ -75,10 +75,10 @@ nuget Be.Vlaanderen.Basisregisters.ProjectionHandling.Runner ~> 1.2
 nuget Be.Vlaanderen.Basisregisters.ProjectionHandling.Connector.Testing ~> 1.2
 nuget Be.Vlaanderen.Basisregisters.ProjectionHandling.Syndication ~> 1.2
 
-nuget Be.Vlaanderen.Basisregisters.DataDog.Tracing.Autofac ~> 1.0
-nuget Be.Vlaanderen.Basisregisters.DataDog.Tracing.AspNetCore ~> 1.0
-nuget Be.Vlaanderen.Basisregisters.DataDog.Tracing.Sql ~> 1.0
-nuget Be.Vlaanderen.Basisregisters.DataDog.Tracing.SqlStreamStore ~> 1.0
+nuget Be.Vlaanderen.Basisregisters.DataDog.Tracing.Autofac ~> 1.1
+nuget Be.Vlaanderen.Basisregisters.DataDog.Tracing.AspNetCore ~> 1.1
+nuget Be.Vlaanderen.Basisregisters.DataDog.Tracing.Sql ~> 1.1
+nuget Be.Vlaanderen.Basisregisters.DataDog.Tracing.SqlStreamStore ~> 1.1
 
 nuget Be.Vlaanderen.Basisregisters.Crab ~> 1.0
 
@@ -105,7 +105,7 @@ nuget xunit 2.4.1
 nuget xunit.runner.visualstudio 2.4.1
 nuget xunit.categories 2.0.4
 nuget AutoFixture 4.6.0
-nuget FluentAssertions 5.5.3
+nuget FluentAssertions 5.6.0
 
 // BUILD STUFF
 nuget FAKE 4.64.13 // Don't update to v5!
