@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.1.2...v1.2.0) (2019-01-17)
+
+
+### Features
+
+* do not take diacritics into account when filtering on municipality ([025a122](https://github.com/informatievlaanderen/streetname-registry/commit/025a122))
+
 ## [1.1.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.1.1...v1.1.2) (2019-01-16)
 
 
