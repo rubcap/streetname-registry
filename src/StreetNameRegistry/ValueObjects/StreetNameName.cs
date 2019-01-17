@@ -6,6 +6,7 @@ namespace StreetNameRegistry
     public class StreetNameName : ValueObject<StreetNameName>
     {
         public string Name { get; }
+
         public Language? Language { get; }
 
         public StreetNameName(string name, Language? language)
@@ -19,5 +20,7 @@ namespace StreetNameRegistry
             yield return Name;
             yield return Language;
         }
+
+        public override string ToString() => $"{Name} ({Language})";
     }
 }

@@ -15,7 +15,6 @@ namespace StreetNameRegistry.Projections.LastChangedList
                 Name,
                 new Projections(),
                 envelopeFactory,
-                logger)
-        { }
+                logger) { }
     }
 }

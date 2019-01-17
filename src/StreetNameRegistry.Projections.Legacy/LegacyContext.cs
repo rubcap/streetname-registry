@@ -42,13 +42,11 @@ namespace StreetNameRegistry.Projections.Legacy
                 .AddEnvironmentVariables()
                 .Build();
 
-            var builder = new DbContextOptionsBuilder<LegacyContext>();
-
             var connectionString = configuration.GetConnectionString(migrationConnectionStringName);
             if (string.IsNullOrEmpty(connectionString))
                 throw new InvalidOperationException($"Could not find a connection string with name '{migrationConnectionStringName}'");
 
-            builder
+            var builder = new DbContextOptionsBuilder<LegacyContext>()
                 .UseSqlServer(connectionString, sqlServerOptions =>
                 {
                     sqlServerOptions.EnableRetryOnFailure();

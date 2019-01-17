@@ -50,12 +50,15 @@ namespace StreetNameRegistry.Projections.Syndication.Municipality
                     case Taal.NL:
                         syndicationItem.NameDutch = naam.Spelling;
                         break;
+
                     case Taal.FR:
                         syndicationItem.NameFrench = naam.Spelling;
                         break;
+
                     case Taal.DE:
                         syndicationItem.NameGerman = naam.Spelling;
                         break;
+
                     case Taal.EN:
                         syndicationItem.NameEnglish = naam.Spelling;
                         break;
