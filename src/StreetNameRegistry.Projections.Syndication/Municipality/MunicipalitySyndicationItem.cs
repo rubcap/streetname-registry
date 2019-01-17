@@ -28,10 +28,12 @@ namespace StreetNameRegistry.Projections.Syndication.Municipality
                 .ForSqlServerIsClustered(false);
 
             builder.Property(x => x.NisCode);
+
             builder.Property(x => x.NameDutch);
             builder.Property(x => x.NameFrench);
             builder.Property(x => x.NameGerman);
             builder.Property(x => x.NameEnglish);
+
             builder.Property(x => x.Version);
             builder.Property(x => x.Position);
 

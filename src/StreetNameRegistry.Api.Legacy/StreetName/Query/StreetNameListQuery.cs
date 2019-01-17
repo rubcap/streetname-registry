@@ -5,6 +5,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Query
     using Be.Vlaanderen.Basisregisters.Api.Search;
     using Be.Vlaanderen.Basisregisters.Api.Search.Filtering;
     using Be.Vlaanderen.Basisregisters.Api.Search.Sorting;
+    using Be.Vlaanderen.Basisregisters.GrAr.Common;
     using Microsoft.EntityFrameworkCore;
     using Projections.Legacy;
     using Projections.Legacy.StreetNameList;
@@ -45,15 +46,16 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Query
             if (!string.IsNullOrEmpty(filtering.Filter.NameGerman))
                 streetNames = streetNames.Where(s => s.NameGerman.Contains(filtering.Filter.NameGerman));
 
+            var filterMunicipalityName = filtering.Filter.MunicipalityName.RemoveDiacritics();
             if (!string.IsNullOrEmpty(filtering.Filter.MunicipalityName))
             {
                 var municipalityNisCodes = _syndicationContext
                     .MunicipalityLatestItems
                     .AsNoTracking()
-                    .Where(x => x.NameDutch == filtering.Filter.MunicipalityName ||
-                                x.NameFrench == filtering.Filter.MunicipalityName ||
-                                x.NameEnglish == filtering.Filter.MunicipalityName ||
-                                x.NameGerman == filtering.Filter.MunicipalityName)
+                    .Where(x => x.NameDutchSearch == filterMunicipalityName ||
+                                x.NameFrenchSearch == filterMunicipalityName ||
+                                x.NameEnglishSearch == filterMunicipalityName ||
+                                x.NameGermanSearch == filterMunicipalityName)
                     .Select(x => x.NisCode)
                     .ToList();
 

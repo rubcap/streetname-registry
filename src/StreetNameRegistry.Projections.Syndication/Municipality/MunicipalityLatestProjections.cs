@@ -4,6 +4,7 @@ namespace StreetNameRegistry.Projections.Syndication.Municipality
     using System.Linq;
     using System.Threading;
     using System.Threading.Tasks;
+    using Be.Vlaanderen.Basisregisters.GrAr.Common;
     using Be.Vlaanderen.Basisregisters.GrAr.Legacy;
     using Be.Vlaanderen.Basisregisters.ProjectionHandling.Syndication;
 
@@ -64,15 +65,22 @@ namespace StreetNameRegistry.Projections.Syndication.Municipality
                     default:
                     case Taal.NL:
                         syndicationItem.NameDutch = naam.Spelling;
+                        syndicationItem.NameDutchSearch = naam.Spelling.RemoveDiacritics();
                         break;
+
                     case Taal.FR:
                         syndicationItem.NameFrench = naam.Spelling;
+                        syndicationItem.NameFrenchSearch = naam.Spelling.RemoveDiacritics();
                         break;
+
                     case Taal.DE:
                         syndicationItem.NameGerman = naam.Spelling;
+                        syndicationItem.NameGermanSearch = naam.Spelling.RemoveDiacritics();
                         break;
+
                     case Taal.EN:
                         syndicationItem.NameEnglish = naam.Spelling;
+                        syndicationItem.NameEnglishSearch = naam.Spelling.RemoveDiacritics();
                         break;
                 }
             }

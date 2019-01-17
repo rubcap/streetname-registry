@@ -9,11 +9,18 @@ namespace StreetNameRegistry.Projections.Syndication.Municipality
     {
         public Guid MunicipalityId { get; set; }
         public string NisCode { get; set; }
+
         public string NameDutch { get; set; }
+        public string NameDutchSearch { get; set; }
         public string NameFrench { get; set; }
+        public string NameFrenchSearch { get; set; }
         public string NameGerman { get; set; }
+        public string NameGermanSearch { get; set; }
         public string NameEnglish { get; set; }
+        public string NameEnglishSearch { get; set; }
+
         public DateTimeOffset? Version { get; set; }
+
         public long Position { get; set; }
     }
 
@@ -28,19 +35,26 @@ namespace StreetNameRegistry.Projections.Syndication.Municipality
                 .ForSqlServerIsClustered(false);
 
             builder.Property(x => x.NisCode);
+
             builder.Property(x => x.NameDutch);
+            builder.Property(x => x.NameDutchSearch);
             builder.Property(x => x.NameFrench);
+            builder.Property(x => x.NameFrenchSearch);
             builder.Property(x => x.NameGerman);
+            builder.Property(x => x.NameGermanSearch);
             builder.Property(x => x.NameEnglish);
+            builder.Property(x => x.NameEnglishSearch);
+
             builder.Property(x => x.Version);
             builder.Property(x => x.Position);
 
             builder.HasIndex(x => x.Position);
             builder.HasIndex(x => x.NisCode).ForSqlServerIsClustered();
-            builder.HasIndex(x => x.NameDutch);
-            builder.HasIndex(x => x.NameFrench);
-            builder.HasIndex(x => x.NameEnglish);
-            builder.HasIndex(x => x.NameGerman);
+
+            builder.HasIndex(x => x.NameDutchSearch);
+            builder.HasIndex(x => x.NameFrenchSearch);
+            builder.HasIndex(x => x.NameGermanSearch);
+            builder.HasIndex(x => x.NameEnglishSearch);
         }
     }
 }
