@@ -3,36 +3,6 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameVersion
     using Be.Vlaanderen.Basisregisters.ProjectionHandling.Connector;
     using Be.Vlaanderen.Basisregisters.ProjectionHandling.SqlStreamStore;
     using StreetName.Events;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using Microsoft.EntityFrameworkCore;
-
-    public static class StreetNameVersionQueries
-    {
-        public static async Task<IEnumerable<StreetNameVersion>> AllVersions(
-            this LegacyContext context,
-            Guid streetNameId,
-            CancellationToken cancellationToken)
-        {
-            var sqlEntities = await context
-                .StreetNameVersions
-                .Where(x => x.StreetNameId == streetNameId)
-                .ToListAsync(cancellationToken);
-
-            var localEntities = context
-                .StreetNameVersions
-                .Local
-                .Where(x => x.StreetNameId == streetNameId)
-                .ToList();
-
-            return sqlEntities
-                .Union(localEntities)
-                .Distinct();
-        }
-    }
 
     public class StreetNameVersionProjections : ConnectedProjection<LegacyContext>
     {

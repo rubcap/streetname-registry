@@ -1,6 +1,7 @@
 namespace StreetNameRegistry.Projections.Legacy.StreetNameVersion
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Threading;
     using System.Threading.Tasks;
@@ -51,6 +52,27 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameVersion
                    .Where(x => x.StreetNameId == streetNameId)
                    .OrderByDescending(x => x.Position)
                    .FirstOrDefaultAsync(ct);
+
+        public static async Task<IEnumerable<StreetNameVersion>> AllVersions(
+            this LegacyContext context,
+            Guid streetNameId,
+            CancellationToken cancellationToken)
+        {
+            var sqlEntities = await context
+                .StreetNameVersions
+                .Where(x => x.StreetNameId == streetNameId)
+                .ToListAsync(cancellationToken);
+
+            var localEntities = context
+                .StreetNameVersions
+                .Local
+                .Where(x => x.StreetNameId == streetNameId)
+                .ToList();
+
+            return sqlEntities
+                .Union(localEntities)
+                .Distinct();
+        }
 
         public static void ApplyProvenance(
             this StreetNameVersion streetNameVersion,
