@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.2.0...v1.2.1) (2019-01-18)
+
+
+### Bug Fixes
+
+* migrations history table for syndication ([f78cd51](https://github.com/informatievlaanderen/streetname-registry/commit/f78cd51))
+
 # [1.2.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.1.2...v1.2.0) (2019-01-17)
 
 
