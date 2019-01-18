@@ -24,7 +24,7 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameDetail
                         }, ct);
             });
 
-            When<Envelope<StreetNameNameWasNamed>>(async (context, message, ct) =>
+            When<Envelope<StreetNameWasNamed>>(async (context, message, ct) =>
             {
                 await context.FindAndUpdateStreetNameDetail(
                     message.Message.StreetNameId,

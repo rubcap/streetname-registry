@@ -71,8 +71,8 @@ namespace StreetNameRegistry.Tests.Generate
 
         public static Generator<MunicipalityId> MunicipalityId = new Generator<MunicipalityId>(r => new MunicipalityId(Produce.Guid().Generate(r)));
 
-        public static Generator<StreetNameNameWasNamed> StreetNameNameWasNamed = new Generator<StreetNameNameWasNamed>(r =>
-            new StreetNameNameWasNamed(StreetNameId.Generate(r), StreetNameName.Generate(r)));
+        public static Generator<StreetNameWasNamed> StreetNameNameWasNamed = new Generator<StreetNameWasNamed>(r =>
+            new StreetNameWasNamed(StreetNameId.Generate(r), StreetNameName.Generate(r)));
 
         public static Generator<StreetNameWasRemoved> StreetNameWasRemoved = new Generator<StreetNameWasRemoved>(r =>
             new StreetNameWasRemoved(StreetNameId.Generate(r)));
@@ -281,24 +281,24 @@ namespace StreetNameRegistry.Tests.Generate
             return new StreetNameOsloIdWasAssigned(new StreetNameId(e.StreetNameId), new OsloId(osloId), new OsloAssignmentDate(e.AssignmentDate));
         }
 
-        public static StreetNameNameWasNamed WithId(this StreetNameNameWasNamed e, Guid id)
+        public static StreetNameWasNamed WithId(this StreetNameWasNamed e, Guid id)
         {
-            return new StreetNameNameWasNamed(new StreetNameId(id), new StreetNameName(e.Name, e.Language));
+            return new StreetNameWasNamed(new StreetNameId(id), new StreetNameName(e.Name, e.Language));
         }
 
-        public static StreetNameNameWasNamed WithName(this StreetNameNameWasNamed e, string name)
+        public static StreetNameWasNamed WithName(this StreetNameWasNamed e, string name)
         {
-            return new StreetNameNameWasNamed(new StreetNameId(e.StreetNameId), new StreetNameName(name, e.Language));
+            return new StreetNameWasNamed(new StreetNameId(e.StreetNameId), new StreetNameName(name, e.Language));
         }
 
-        public static StreetNameNameWasNamed WithLanguage(this StreetNameNameWasNamed e, Language? language)
+        public static StreetNameWasNamed WithLanguage(this StreetNameWasNamed e, Language? language)
         {
-            return new StreetNameNameWasNamed(new StreetNameId(e.StreetNameId), new StreetNameName(e.Name, language));
+            return new StreetNameWasNamed(new StreetNameId(e.StreetNameId), new StreetNameName(e.Name, language));
         }
 
-        public static StreetNameNameWasNamed WithProvenance(this StreetNameNameWasNamed e, Provenance provenance)
+        public static StreetNameWasNamed WithProvenance(this StreetNameWasNamed e, Provenance provenance)
         {
-            var newEvent = new StreetNameNameWasNamed(new StreetNameId(e.StreetNameId), new StreetNameName(e.Name, e.Language));
+            var newEvent = new StreetNameWasNamed(new StreetNameId(e.StreetNameId), new StreetNameName(e.Name, e.Language));
             ((ISetProvenance)newEvent).SetProvenance(provenance);
 
             return newEvent;

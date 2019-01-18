@@ -39,7 +39,7 @@ namespace StreetNameRegistry.StreetName
             Register<StreetNameStatusWasCorrectedToRemoved>(When);
             Register<StreetNameWasCorrectedToRetired>(When);
 
-            Register<StreetNameNameWasNamed>(When);
+            Register<StreetNameWasNamed>(When);
             Register<StreetNameNameWasCorrected>(When);
             Register<StreetNameNameWasCleared>(When);
             Register<StreetNameNameWasCorrectedToCleared>(When);
@@ -133,7 +133,7 @@ namespace StreetNameRegistry.StreetName
             _names.AddOrUpdate(@event.Language, @event.Name);
         }
 
-        private void When(StreetNameNameWasNamed @event)
+        private void When(StreetNameWasNamed @event)
         {
             _names.AddOrUpdate(@event.Language, @event.Name);
         }

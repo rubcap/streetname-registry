@@ -35,7 +35,7 @@ namespace StreetNameRegistry.Projections.LastChangedList
                 await GetLastChangedRecordsAndUpdatePosition(message.Message.StreetNameId.ToString(), message.Position, context, ct);
             });
 
-            When<Envelope<StreetNameNameWasNamed>>(async (context, message, ct) =>
+            When<Envelope<StreetNameWasNamed>>(async (context, message, ct) =>
             {
                 await GetLastChangedRecordsAndUpdatePosition(message.Message.StreetNameId.ToString(), message.Position, context, ct);
             });

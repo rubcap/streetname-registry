@@ -34,7 +34,7 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameVersion
                     entity.OsloId = message.Message.OsloId;
             });
 
-            When<Envelope<StreetNameNameWasNamed>>(async (context, message, ct) =>
+            When<Envelope<StreetNameWasNamed>>(async (context, message, ct) =>
             {
                 await context.CreateNewStreetNameVersionItem(
                     message.Message.StreetNameId,

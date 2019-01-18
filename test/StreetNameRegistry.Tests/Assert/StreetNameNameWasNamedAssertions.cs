@@ -4,9 +4,9 @@ namespace StreetNameRegistry.Tests.Assert
     using StreetName.Events;
 
     public class StreetNameNameWasNamedAssertions :
-        HasStreetNameIdAssertions<StreetNameNameWasNamed, StreetNameNameWasNamedAssertions>
+        HasStreetNameIdAssertions<StreetNameWasNamed, StreetNameNameWasNamedAssertions>
     {
-        public StreetNameNameWasNamedAssertions(StreetNameNameWasNamed subject) : base(subject)
+        public StreetNameNameWasNamedAssertions(StreetNameWasNamed subject) : base(subject)
         {
         }
 

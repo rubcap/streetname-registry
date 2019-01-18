@@ -36,7 +36,7 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameSyndication
                     ct);
             });
 
-            When<Envelope<StreetNameNameWasNamed>>(async (context, message, ct) =>
+            When<Envelope<StreetNameWasNamed>>(async (context, message, ct) =>
             {
                 await context.CreateNewStreetNameSyndicationItem(
                     message.Message.StreetNameId,

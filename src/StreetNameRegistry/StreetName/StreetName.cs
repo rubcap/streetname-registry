@@ -147,7 +147,7 @@ namespace StreetNameRegistry.StreetName
                 if (_names.HasLanguage(streetName.Language?.ToLanguage()) && string.IsNullOrEmpty(name))
                     ApplyChange(new StreetNameNameWasCleared(_streetNameId, streetName.Language?.ToLanguage()));
                 else
-                    ApplyChange(new StreetNameNameWasNamed(_streetNameId, new StreetNameName(name, streetName.Language?.ToLanguage())));
+                    ApplyChange(new StreetNameWasNamed(_streetNameId, new StreetNameName(name, streetName.Language?.ToLanguage())));
             }
         }
 

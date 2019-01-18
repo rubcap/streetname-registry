@@ -382,7 +382,7 @@ namespace StreetNameRegistry.Tests.AggregateTests
                 Arrange(Generate.CrabModificationNullableExceptDeleteCorrection));
 
             sut.Should().HaveChanges();
-            sut.Should().HaveSingleChange<StreetNameNameWasNamed>(x => x.Language == language?.ToLanguage())
+            sut.Should().HaveSingleChange<StreetNameWasNamed>(x => x.Language == language?.ToLanguage())
                 .Which.Should().HaveName(expectedPrimaryname)
                 .And.HaveStreetNameId(streetNameId)
                 .And.HaveLanguage(language?.ToLanguage());
@@ -401,7 +401,7 @@ namespace StreetNameRegistry.Tests.AggregateTests
                 Arrange(Generate.CrabModificationNullableExceptDeleteCorrection));
 
             sut.Should().HaveChanges();
-            sut.Should().NotHaveAnyChange<StreetNameNameWasNamed>(x => x.Language == language?.ToLanguage());
+            sut.Should().NotHaveAnyChange<StreetNameWasNamed>(x => x.Language == language?.ToLanguage());
         }
 
         [Fact]
@@ -419,7 +419,7 @@ namespace StreetNameRegistry.Tests.AggregateTests
                 Arrange(Generate.CrabLifetime), Arrange(Generate.CrabModificationNullableExceptDeleteCorrection));
 
             sut.Should().HaveChanges();
-            sut.Should().HaveSingleChange<StreetNameNameWasNamed>(x => x.Language == secondaryStreetName.Language?.ToLanguage())
+            sut.Should().HaveSingleChange<StreetNameWasNamed>(x => x.Language == secondaryStreetName.Language?.ToLanguage())
                 .Which.Should().HaveName(secondaryStreetName.Name)
                 .And.HaveStreetNameId(streetNameId)
                 .And.HaveLanguage(secondaryStreetName.Language?.ToLanguage());
@@ -438,7 +438,7 @@ namespace StreetNameRegistry.Tests.AggregateTests
                 Arrange(Generate.CrabModificationNullableExceptDeleteCorrection));
 
             sut.Should().HaveChanges();
-            sut.Should().NotHaveAnyChange<StreetNameNameWasNamed>(x => x.Language == language?.ToLanguage());
+            sut.Should().NotHaveAnyChange<StreetNameWasNamed>(x => x.Language == language?.ToLanguage());
         }
 
         [Fact]
@@ -721,7 +721,7 @@ namespace StreetNameRegistry.Tests.AggregateTests
             sut = Act(sut, Arrange(Generate.CrabStreetNameWithNameAndLanguage(streetName, language)), Arrange(Generate.CrabStreetNameExceptLanguage(language)),
                 Arrange(Generate.CrabLifetime), Arrange(Generate.CrabModificationNullableExceptDeleteCorrection));
 
-            sut.Should().NotHaveAnyChange<StreetNameNameWasNamed>(x => x.Language == language?.ToLanguage());
+            sut.Should().NotHaveAnyChange<StreetNameWasNamed>(x => x.Language == language?.ToLanguage());
         }
 
         [Fact]
@@ -741,7 +741,7 @@ namespace StreetNameRegistry.Tests.AggregateTests
             sut = Act(sut, Arrange(Generate.CrabStreetNameExceptLanguage(language)), Arrange(Generate.CrabStreetNameWithNameAndLanguage(streetName, language)),
                 Arrange(Generate.CrabLifetime), Arrange(Generate.CrabModificationNullableExceptDeleteCorrection));
 
-            sut.Should().NotHaveAnyChange<StreetNameNameWasNamed>(x => x.Language == language?.ToLanguage());
+            sut.Should().NotHaveAnyChange<StreetNameWasNamed>(x => x.Language == language?.ToLanguage());
         }
     }
 }

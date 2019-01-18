@@ -5,9 +5,9 @@ namespace StreetNameRegistry.StreetName.Events
     using Newtonsoft.Json;
     using Be.Vlaanderen.Basisregisters.GrAr.Provenance;
 
-    [EventName("StreetNameNameWasNamed")]
+    [EventName("StreetNameWasNamed")]
     [EventDescription("De straatnaam werd benoemd.")]
-    public class StreetNameNameWasNamed : IHasStreetNameId, IHasProvenance, ISetProvenance
+    public class StreetNameWasNamed : IHasStreetNameId, IHasProvenance, ISetProvenance
     {
         public Guid StreetNameId { get; }
 
@@ -15,7 +15,7 @@ namespace StreetNameRegistry.StreetName.Events
         public Language? Language { get; }
         public ProvenanceData Provenance { get; private set; }
 
-        public StreetNameNameWasNamed(
+        public StreetNameWasNamed(
             StreetNameId streetNameId,
             StreetNameName name)
         {
@@ -25,7 +25,7 @@ namespace StreetNameRegistry.StreetName.Events
         }
 
         [JsonConstructor]
-        private StreetNameNameWasNamed(
+        private StreetNameWasNamed(
             Guid streetNameId,
             string name,
             Language? language,

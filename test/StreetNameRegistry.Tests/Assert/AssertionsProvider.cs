@@ -50,7 +50,7 @@ namespace StreetNameRegistry.Tests.Assert
             return new StreetNameWasCorrectedToRetiredAssertions(subject);
         }
 
-        public static StreetNameNameWasNamedAssertions Should(this StreetNameNameWasNamed subject)
+        public static StreetNameNameWasNamedAssertions Should(this StreetNameWasNamed subject)
         {
             return new StreetNameNameWasNamedAssertions(subject);
         }
