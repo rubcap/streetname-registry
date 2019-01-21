@@ -8,7 +8,6 @@ namespace StreetNameRegistry.Api.Extract.Extracts
     using Be.Vlaanderen.Basisregisters.Api;
     using Be.Vlaanderen.Basisregisters.Api.Exceptions;
     using ExtractFiles;
-    using Infrastructure;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
@@ -39,7 +38,7 @@ namespace StreetNameRegistry.Api.Extract.Extracts
         [SwaggerResponseExample(StatusCodes.Status500InternalServerError, typeof(InternalServerErrorResponseExamples), jsonConverter: typeof(StringEnumConverter))]
         public async Task<IActionResult> Get(
             [FromServices] ExtractContext context,
-            CancellationToken cancellationToken)
+            CancellationToken cancellationToken = default)
         {
             var streetNames = await context
                 .StreetNameExtract

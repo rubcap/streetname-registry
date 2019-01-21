@@ -24,11 +24,11 @@ namespace StreetNameRegistry.StreetName.Commands
             AssignmentDate = assignmentDate;
         }
 
-        public Guid CreateCommandId() =>
-            Deterministic.Create(Namespace, $"AssignOsloId-{ToString()}");
+        public Guid CreateCommandId()
+            => Deterministic.Create(Namespace, $"AssignOsloId-{ToString()}");
 
-        public override string ToString() =>
-            ToStringBuilder.ToString(IdentityFields());
+        public override string ToString()
+            => ToStringBuilder.ToString(IdentityFields());
 
         private IEnumerable<object> IdentityFields()
         {

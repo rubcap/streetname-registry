@@ -32,11 +32,11 @@ namespace StreetNameRegistry.Api.CrabImport.CrabImport
         private static double GetElapsedMilliseconds(long start, long stop) => (stop - start) * 1000 / (double)Stopwatch.Frequency;
 
         /// <summary>
-        /// Import een CRAB item.
+        /// Import een collectie CRAB items.
         /// </summary>
         /// <param name="bus"></param>
         /// <param name="logger"></param>
-        /// <param name="registerCrabImport"></param>
+        /// <param name="registerCrabImportList"></param>
         /// <param name="cancellationToken"></param>
         /// <response code="202">Als het verzoek aanvaard is.</response>
         /// <response code="400">Als het verzoek ongeldige data bevat.</response>
@@ -53,7 +53,7 @@ namespace StreetNameRegistry.Api.CrabImport.CrabImport
         public async Task<IActionResult> Post(
             [FromServices] IdempotentCommandHandlerModule bus,
             [FromServices] ILogger<CrabImportController> logger,
-            [FromBody] List<RegisterCrabImportRequest[]> registerCrabImport,
+            [FromBody] List<RegisterCrabImportRequest[]> registerCrabImportList,
             CancellationToken cancellationToken = default)
         {
             if (!ModelState.IsValid)
@@ -62,9 +62,9 @@ namespace StreetNameRegistry.Api.CrabImport.CrabImport
             var tags = new ConcurrentBag<long?>();
 
             var start = Stopwatch.GetTimestamp();
-            logger.LogDebug(AggregateMessageTemplate, registerCrabImport.Count);
+            logger.LogDebug(AggregateMessageTemplate, registerCrabImportList.Count);
 
-            await registerCrabImport.ParallelForEachAsync(async registerCrabImports =>
+            await registerCrabImportList.ParallelForEachAsync(async registerCrabImports =>
             {
                 var startCommands = Stopwatch.GetTimestamp();
 
@@ -98,8 +98,8 @@ namespace StreetNameRegistry.Api.CrabImport.CrabImport
 
             logger.LogDebug(
                 BatchMessageTemplate,
-                registerCrabImport.Count,
-                registerCrabImport.SelectMany(x => x).Count(),
+                registerCrabImportList.Count,
+                registerCrabImportList.SelectMany(x => x).Count(),
                 GetElapsedMilliseconds(start, Stopwatch.GetTimestamp()));
 
             return Accepted(tags.Any() ? tags.Max() : null);

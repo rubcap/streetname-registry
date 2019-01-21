@@ -6,8 +6,6 @@ namespace StreetNameRegistry.Api.Extract.Extracts.Responses
     public class StreetNameRegistryResponseExample : IExamplesProvider
     {
         public object GetExamples()
-        {
-            return new { mimeType = "application/zip", fileName = $"{ExtractController.ZipName}-{DateTime.Now:yyyy-MM-dd}.zip" };
-        }
+            => new { mimeType = "application/zip", fileName = $"{ExtractController.ZipName}-{DateTime.Now:yyyy-MM-dd}.zip" };
     }
 }

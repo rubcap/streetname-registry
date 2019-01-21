@@ -1,4 +1,4 @@
-namespace Aiv.Vbr.Testing.Infrastructure.Events
+namespace Be.Vlaanderen.Basisregisters.Testing.Infrastructure.Events
 {
     using System;
     using System.Collections.Generic;

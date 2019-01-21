@@ -40,11 +40,11 @@ namespace StreetNameRegistry.StreetName.Commands
             Organisation = organisation;
         }
 
-        public Guid CreateCommandId() =>
-            Deterministic.Create(Namespace, $"ImportStreetNameStatusFromCrab-{ToString()}");
+        public Guid CreateCommandId()
+            => Deterministic.Create(Namespace, $"ImportStreetNameStatusFromCrab-{ToString()}");
 
-        public override string ToString() =>
-            ToStringBuilder.ToString(IdentityFields());
+        public override string ToString()
+            => ToStringBuilder.ToString(IdentityFields());
 
         private IEnumerable<object> IdentityFields()
         {
