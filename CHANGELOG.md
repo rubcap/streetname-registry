@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.2.2...v1.2.3) (2019-01-22)
+
+
+### Bug Fixes
+
+* use https for namespace ([92965c1](https://github.com/informatievlaanderen/streetname-registry/commit/92965c1))
+
 ## [1.2.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.2.1...v1.2.2) (2019-01-18)
 
 ## [1.2.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.2.0...v1.2.1) (2019-01-18)
