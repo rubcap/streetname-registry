@@ -14,7 +14,6 @@ namespace StreetNameRegistry.Projections.Extract
     using Modules;
     using Serilog;
     using SqlStreamStore;
-    using StreetnameRegistry.Projections.Extract.Modules;
 
     public class Program
     {
@@ -81,6 +80,7 @@ namespace StreetNameRegistry.Projections.Extract
             }
 
             Console.WriteLine("Stopping...");
+            Closing.Close();
         }
 
         private static IServiceProvider ConfigureServices(IConfiguration configuration)

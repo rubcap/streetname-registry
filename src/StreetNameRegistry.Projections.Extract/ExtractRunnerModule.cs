@@ -34,8 +34,7 @@ namespace StreetNameRegistry.Projections.Extract
                 .RegisterModule(new ExtractModule(_configuration, _services, _loggerFactory));
 
             containerBuilder
-                .RegisterModule(new EventHandlingModule(typeof(DomainAssemblyMarker).Assembly,
-                    eventSerializerSettings));
+                .RegisterModule(new EventHandlingModule(typeof(DomainAssemblyMarker).Assembly, eventSerializerSettings));
 
             containerBuilder
                 .RegisterModule(new EnvelopeModule());

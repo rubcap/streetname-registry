@@ -52,11 +52,10 @@ namespace StreetNameRegistry.Projections.Legacy
             {
                 var runner = container.GetService<StreetNameLegacyRunner>();
 
-                if (!string.IsNullOrWhiteSpace(configuration.GetConnectionString("LegacyProjectionsAdmin")))
-                    await MigrationsHelper.RunAsync(
-                        configuration.GetConnectionString("LegacyProjectionsAdmin"),
-                        container.GetService<ILoggerFactory>(),
-                        ct);
+                await MigrationsHelper.RunAsync(
+                    configuration.GetConnectionString("LegacyProjectionsAdmin"),
+                    container.GetService<ILoggerFactory>(),
+                    ct);
 
                 await runner.StartAsync(
                     container.GetService<IStreamStore>(),

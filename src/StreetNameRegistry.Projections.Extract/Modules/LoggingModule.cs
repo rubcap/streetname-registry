@@ -1,4 +1,4 @@
-namespace StreetnameRegistry.Projections.Extract.Modules
+namespace StreetNameRegistry.Projections.Extract.Modules
 {
     using System;
     using Autofac;
