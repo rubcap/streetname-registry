@@ -1,3 +1,18 @@
+# [1.3.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.2.3...v1.3.0) (2019-01-25)
+
+
+### Bug Fixes
+
+* correctly setting primary language in sync projection ([825ba1a](https://github.com/informatievlaanderen/streetname-registry/commit/825ba1a))
+* fix starting Syndication projection ([46788bc](https://github.com/informatievlaanderen/streetname-registry/commit/46788bc))
+* list now displays name of streetnames correctly ([d02b6d2](https://github.com/informatievlaanderen/streetname-registry/commit/d02b6d2))
+
+
+### Features
+
+* adapted sync with new municipality changes ([c05d427](https://github.com/informatievlaanderen/streetname-registry/commit/c05d427))
+* change display municipality name of detail in Api.Legacy ([79d693f](https://github.com/informatievlaanderen/streetname-registry/commit/79d693f))
+
 ## [1.2.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.2.2...v1.2.3) (2019-01-22)
 
 
