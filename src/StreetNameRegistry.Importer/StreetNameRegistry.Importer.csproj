@@ -64,7 +64,6 @@
     <Compile Include="SettingsBasedConfig.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="StreetNameRegistry.Importer-Staging.exe.config" />
     <None Include="App.config" />
     <None Include="paket.references" />
     <None Include="Properties\Settings.settings">
