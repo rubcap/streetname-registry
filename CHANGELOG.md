@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.2...v1.3.3) (2019-02-06)
+
+
+### Bug Fixes
+
+* properly serialise rfc 3339 dates ([abd5daf](https://github.com/informatievlaanderen/streetname-registry/commit/abd5daf))
+
 ## [1.3.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.1...v1.3.2) (2019-02-06)
 
 
