@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.1...v1.3.2) (2019-02-06)
+
+
+### Bug Fixes
+
+* oslo id and niscode in sync werent correctly projected ([32d9ee8](https://github.com/informatievlaanderen/streetname-registry/commit/32d9ee8))
+
 ## [1.3.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.0...v1.3.1) (2019-02-04)
 
 # [1.3.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.2.3...v1.3.0) (2019-01-25)
