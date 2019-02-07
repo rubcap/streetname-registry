@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.3...v1.3.4) (2019-02-07)
+
+
+### Bug Fixes
+
+* support nullable Rfc3339SerializableDateTimeOffset in converter ([7b3c704](https://github.com/informatievlaanderen/streetname-registry/commit/7b3c704))
+
 ## [1.3.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.2...v1.3.3) (2019-02-06)
 
 
