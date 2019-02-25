@@ -1,3 +1,11 @@
+## [1.3.5](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.4...v1.3.5) (2019-02-25)
+
+
+### Bug Fixes
+
+* extract only exports completed items ([6baf2e9](https://github.com/informatievlaanderen/streetname-registry/commit/6baf2e9))
+* use new lastchangedlist migrations runner ([4d4e0e2](https://github.com/informatievlaanderen/streetname-registry/commit/4d4e0e2))
+
 ## [1.3.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.3...v1.3.4) (2019-02-07)
 
 
