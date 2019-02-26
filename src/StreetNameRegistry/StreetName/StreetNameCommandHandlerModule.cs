@@ -5,20 +5,30 @@ namespace StreetNameRegistry.StreetName
     using System.Threading.Tasks;
     using Be.Vlaanderen.Basisregisters.AggregateSource;
     using Be.Vlaanderen.Basisregisters.CommandHandling;
+    using Be.Vlaanderen.Basisregisters.CommandHandling.SqlStreamStore;
+    using Be.Vlaanderen.Basisregisters.EventHandling;
     using Commands;
     using Be.Vlaanderen.Basisregisters.GrAr.Provenance;
+    using SqlStreamStore;
 
-    public sealed class StreetNameCommandHandlerModule : ProvenanceCommandHandlerModule<StreetName>
+    public sealed class StreetNameCommandHandlerModule : CommandHandlerModule
     {
         public StreetNameCommandHandlerModule(
             Func<IStreetNames> getStreetNames,
             Func<ConcurrentUnitOfWork> getUnitOfWork,
-            ReturnHandler<CommandMessage> finalHandler = null) : base(getUnitOfWork, finalHandler, new StreetNameProvenanceFactory())
+            Func<IStreamStore> getStreamStore,
+            EventMapping eventMapping,
+            EventSerializer eventSerializer,
+            StreetNameProvenanceFactory provenanceFactory)
         {
             For<ImportStreetNameFromCrab>()
+                .AddSqlStreamStore(getStreamStore, getUnitOfWork, eventMapping, eventSerializer)
+                .AddProvenance(getUnitOfWork, provenanceFactory)
                 .Handle(async (message, ct) => { await ImportStreetNameFromCrab(getStreetNames, message, ct); });
 
             For<ImportStreetNameStatusFromCrab>()
+                .AddSqlStreamStore(getStreamStore, getUnitOfWork, eventMapping, eventSerializer)
+                .AddProvenance(getUnitOfWork, provenanceFactory)
                 .Handle(async (message, ct) => { await ImportStreetNameStatusFromCrab(getStreetNames, message, ct); });
         }
 

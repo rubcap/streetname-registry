@@ -7,8 +7,9 @@ namespace StreetNameRegistry.Api.CrabImport.CrabImport
     using Be.Vlaanderen.Basisregisters.AggregateSource;
     using Be.Vlaanderen.Basisregisters.CommandHandling;
     using Be.Vlaanderen.Basisregisters.GrAr.Import.Api;
-    using Autofac;
+    using Be.Vlaanderen.Basisregisters.EventHandling;
     using Be.Vlaanderen.Basisregisters.GrAr.Provenance;
+    using SqlStreamStore;
     using StreetName;
     using StreetName.Commands;
 
@@ -16,16 +17,28 @@ namespace StreetNameRegistry.Api.CrabImport.CrabImport
     {
         private readonly ConcurrentUnitOfWork _concurrentUnitOfWork;
         private readonly StreetNameCommandHandlerModule _streetNameCommandHandlerModule;
-        private readonly Func<IHasCrabProvenance, StreetName, Provenance> _provenanceFactory = new StreetNameProvenanceFactory().CreateFrom;
+        private readonly Func<IHasCrabProvenance, StreetName, Provenance> _provenanceFactory;
         private readonly Func<IStreetNames> _getStreetNames;
 
         public IdempotentCommandHandlerModuleProcessor(
-            IComponentContext container,
-            ConcurrentUnitOfWork concurrentUnitOfWork)
+            Func<IStreetNames> getStreetNames,
+            ConcurrentUnitOfWork concurrentUnitOfWork,
+            Func<IStreamStore> getStreamStore,
+            EventMapping eventMapping,
+            EventSerializer eventSerializer,
+            StreetNameProvenanceFactory provenanceFactory)
         {
+            _getStreetNames = getStreetNames;
             _concurrentUnitOfWork = concurrentUnitOfWork;
-            _getStreetNames = container.Resolve<Func<IStreetNames>>();
-            _streetNameCommandHandlerModule = new StreetNameCommandHandlerModule(_getStreetNames, () => concurrentUnitOfWork);
+            _provenanceFactory = provenanceFactory.CreateFrom;
+
+            _streetNameCommandHandlerModule = new StreetNameCommandHandlerModule(
+                getStreetNames,
+                () => concurrentUnitOfWork,
+                getStreamStore,
+                eventMapping,
+                eventSerializer,
+                provenanceFactory);
         }
 
         public async Task<CommandMessage> Process(
