@@ -1,3 +1,10 @@
+## [1.3.8](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.7...v1.3.8) (2019-02-28)
+
+
+### Bug Fixes
+
+* swagger docs now show list response correctly ([79adcf9](https://github.com/informatievlaanderen/streetname-registry/commit/79adcf9))
+
 ## [1.3.7](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.6...v1.3.7) (2019-02-26)
 
 ## [1.3.6](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.5...v1.3.6) (2019-02-25)
