@@ -13,7 +13,9 @@ namespace StreetNameRegistry.Projections.Legacy
     {
         public const string Name = "StreetNameLegacyRunner";
 
-        public StreetNameLegacyRunner(EnvelopeFactory envelopeFactory, ILogger<StreetNameLegacyRunner> logger) :
+        public StreetNameLegacyRunner(
+            EnvelopeFactory envelopeFactory,
+            ILogger<StreetNameLegacyRunner> logger) :
             base(
                 Name,
                 envelopeFactory,
