@@ -87,6 +87,5 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Query
         public string NameFrench { get; set; }
         public string NameGerman { get; set; }
         public string NameEnglish { get; set; }
-        public int Version { get; set; }
     }
 }
