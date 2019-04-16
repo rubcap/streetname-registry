@@ -1,3 +1,10 @@
+## [1.3.10](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.9...v1.3.10) (2019-04-16)
+
+
+### Bug Fixes
+
+* sort streetname list by olsoid [GR-717] ([f62740e](https://github.com/informatievlaanderen/streetname-registry/commit/f62740e))
+
 ## [1.3.9](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.8...v1.3.9) (2019-03-06)
 
 ## [1.3.8](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.7...v1.3.8) (2019-02-28)
