@@ -1,3 +1,10 @@
+## [1.3.11](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.10...v1.3.11) (2019-04-17)
+
+
+### Bug Fixes
+
+* [#8](https://github.com/informatievlaanderen/streetname-registry/issues/8) + Volgende is now not emitted if null ([fe6eb46](https://github.com/informatievlaanderen/streetname-registry/commit/fe6eb46))
+
 ## [1.3.10](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.9...v1.3.10) (2019-04-16)
 
 
