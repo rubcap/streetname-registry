@@ -83,6 +83,8 @@ namespace StreetNameRegistry.Projections.Syndication
                 configuration.GetValue<string>("SyndicationFeeds:MunicipalityAuthUserName"),
                 configuration.GetValue<string>("SyndicationFeeds:MunicipalityAuthPassword"),
                 configuration.GetValue<int>("SyndicationFeeds:MunicipalityPollingInMilliseconds"),
+                configuration.GetValue<bool>("SyndicationFeeds:MunicipalityEmbedEvent"),
+                configuration.GetValue<bool>("SyndicationFeeds:MunicipalityEmbedObject"),
                 container.GetService<ILogger<Program>>(),
                 container.GetService<IRegistryAtomFeedReader>(),
                 new MunicipalitySyndiciationItemProjections(),

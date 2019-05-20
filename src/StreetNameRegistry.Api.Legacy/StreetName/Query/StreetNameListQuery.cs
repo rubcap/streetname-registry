@@ -73,11 +73,11 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Query
             nameof(StreetNameListItem.NameDutch),
             nameof(StreetNameListItem.NameEnglish),
             nameof(StreetNameListItem.NameFrench),
-            nameof(StreetNameListItem.NameGerman)
-
+            nameof(StreetNameListItem.NameGerman),
+            nameof(StreetNameListItem.OsloId)
         };
 
-        public SortingHeader DefaultSortingHeader { get; } = new SortingHeader(nameof(StreetNameListItem.NameDutch), SortOrder.Ascending);
+        public SortingHeader DefaultSortingHeader { get; } = new SortingHeader(nameof(StreetNameListItem.OsloId), SortOrder.Ascending);
     }
 
     public class StreetNameFilter
@@ -87,6 +87,5 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Query
         public string NameFrench { get; set; }
         public string NameGerman { get; set; }
         public string NameEnglish { get; set; }
-        public int Version { get; set; }
     }
 }

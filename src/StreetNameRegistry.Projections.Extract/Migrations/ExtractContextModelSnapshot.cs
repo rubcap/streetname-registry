@@ -15,7 +15,7 @@ namespace StreetNameRegistry.Projections.Extract.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.1-servicing-10028")
+                .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -37,11 +37,29 @@ namespace StreetNameRegistry.Projections.Extract.Migrations
                     b.Property<Guid?>("StreetNameId")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("ChosenLanguage");
-
                     b.Property<bool>("Complete");
 
                     b.Property<byte[]>("DbaseRecord");
+
+                    b.Property<string>("HomonymDutch");
+
+                    b.Property<string>("HomonymEnglish");
+
+                    b.Property<string>("HomonymFrench");
+
+                    b.Property<string>("HomonymGerman");
+
+                    b.Property<string>("HomonymUnknown");
+
+                    b.Property<string>("NameDutch");
+
+                    b.Property<string>("NameEnglish");
+
+                    b.Property<string>("NameFrench");
+
+                    b.Property<string>("NameGerman");
+
+                    b.Property<string>("NameUnknown");
 
                     b.Property<int>("StreetNameOsloId");
 

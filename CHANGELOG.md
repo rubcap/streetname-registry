@@ -1,3 +1,29 @@
+# [1.4.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.12...v1.4.0) (2019-04-30)
+
+
+### Features
+
+* add projector + cleanup projection libraries ([a861da2](https://github.com/informatievlaanderen/streetname-registry/commit/a861da2))
+* upgrade packages ([6d9ad96](https://github.com/informatievlaanderen/streetname-registry/commit/6d9ad96))
+
+## [1.3.12](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.11...v1.3.12) (2019-04-18)
+
+## [1.3.11](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.10...v1.3.11) (2019-04-17)
+
+
+### Bug Fixes
+
+* [#8](https://github.com/informatievlaanderen/streetname-registry/issues/8) + Volgende is now not emitted if null ([fe6eb46](https://github.com/informatievlaanderen/streetname-registry/commit/fe6eb46))
+
+## [1.3.10](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.9...v1.3.10) (2019-04-16)
+
+
+### Bug Fixes
+
+* sort streetname list by olsoid [GR-717] ([f62740e](https://github.com/informatievlaanderen/streetname-registry/commit/f62740e))
+
+## [1.3.9](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.8...v1.3.9) (2019-03-06)
+
 ## [1.3.8](https://github.com/informatievlaanderen/streetname-registry/compare/v1.3.7...v1.3.8) (2019-02-28)
 
 
