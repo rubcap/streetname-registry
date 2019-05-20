@@ -12,6 +12,7 @@ namespace StreetNameRegistry.Api.Extract.Extracts
     using System.Threading;
     using Be.Vlaanderen.Basisregisters.Api.Extract;
     using Projections.Syndication;
+    using ProblemDetails = Be.Vlaanderen.Basisregisters.BasicApiProblem.ProblemDetails;
 
     [ApiVersion("1.0")]
     [AdvertiseApiVersions("1.0")]
@@ -30,7 +31,7 @@ namespace StreetNameRegistry.Api.Extract.Extracts
         /// <response code="500">Als er een interne fout is opgetreden.</response>
         [HttpGet]
         [ProducesResponseType(typeof(FileStreamResult), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(BasicApiProblem), StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
         [SwaggerResponseExample(StatusCodes.Status200OK, typeof(StreetNameRegistryResponseExample), jsonConverter: typeof(StringEnumConverter))]
         [SwaggerResponseExample(StatusCodes.Status500InternalServerError, typeof(InternalServerErrorResponseExamples), jsonConverter: typeof(StringEnumConverter))]
         public IActionResult Get(
