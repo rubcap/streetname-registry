@@ -12,6 +12,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Options;
     using Swashbuckle.AspNetCore.Filters;
+    using ProblemDetails = Be.Vlaanderen.Basisregisters.BasicApiProblem.ProblemDetails;
 
     [DataContract(Name = "StraatnaamDetail", Namespace = "")]
     public class StreetNameResponse
@@ -121,12 +122,12 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
     {
         public object GetExamples()
         {
-            return new BasicApiProblem
+            return new ProblemDetails
             {
                 HttpStatus = StatusCodes.Status404NotFound,
-                Title = BasicApiProblem.DefaultTitle,
+                Title = ProblemDetails.DefaultTitle,
                 Detail = "Onbestaande straatnaam.",
-                ProblemInstanceUri = BasicApiProblem.GetProblemNumber()
+                ProblemInstanceUri = ProblemDetails.GetProblemNumber()
             };
         }
     }
@@ -135,12 +136,12 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
     {
         public object GetExamples()
         {
-            return new BasicApiProblem
+            return new ProblemDetails
             {
                 HttpStatus = StatusCodes.Status410Gone,
-                Title = BasicApiProblem.DefaultTitle,
+                Title = ProblemDetails.DefaultTitle,
                 Detail = "Straatnaam verwijderd.",
-                ProblemInstanceUri = BasicApiProblem.GetProblemNumber()
+                ProblemInstanceUri = ProblemDetails.GetProblemNumber()
             };
         }
     }
