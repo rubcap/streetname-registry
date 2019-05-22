@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.4.2...v1.5.0) (2019-05-22)
+
+
+### Features
+
+* add event data to sync endpoint ([31bd514](https://github.com/informatievlaanderen/streetname-registry/commit/31bd514))
+
 ## [1.4.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.4.1...v1.4.2) (2019-05-21)
 
 ## [1.4.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.4.0...v1.4.1) (2019-05-20)
