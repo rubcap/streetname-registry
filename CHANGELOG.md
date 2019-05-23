@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.5.0...v1.5.1) (2019-05-23)
+
+
+### Bug Fixes
+
+* correct oslo id type for extract ([f735cd8](https://github.com/informatievlaanderen/streetname-registry/commit/f735cd8))
+
 # [1.5.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.4.2...v1.5.0) (2019-05-22)
 
 
