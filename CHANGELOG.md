@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.5.2...v1.6.0) (2019-06-06)
+
+
+### Features
+
+* deploy docker to production ([354a707](https://github.com/informatievlaanderen/streetname-registry/commit/354a707))
+
 ## [1.5.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.5.1...v1.5.2) (2019-06-06)
 
 
