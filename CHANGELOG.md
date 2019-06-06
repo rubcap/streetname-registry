@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.6.0...v1.6.1) (2019-06-06)
+
+
+### Bug Fixes
+
+* force version bump ([d6acf8a](https://github.com/informatievlaanderen/streetname-registry/commit/d6acf8a))
+
 # [1.6.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.5.2...v1.6.0) (2019-06-06)
 
 
