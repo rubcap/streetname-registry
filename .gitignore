@@ -33,6 +33,7 @@ yarn-error.log*
 *.ncrunchproject
 *ncrunchsolution
 _Ncrunch_*
+*nCrunchTemp*
 TestResults.xml
 tracing*.log
 
