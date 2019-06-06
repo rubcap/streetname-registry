@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.5.1...v1.5.2) (2019-06-06)
+
+
+### Bug Fixes
+
+* change idempotency hash to be stable ([9cff84f](https://github.com/informatievlaanderen/streetname-registry/commit/9cff84f))
+
 ## [1.5.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.5.0...v1.5.1) (2019-05-23)
 
 
