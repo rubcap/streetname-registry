@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.6.2...v1.7.0) (2019-06-11)
+
+
+### Features
+
+* upgrade provenance package Plan -> Reason ([fdb618e](https://github.com/informatievlaanderen/streetname-registry/commit/fdb618e))
+
 ## [1.6.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.6.1...v1.6.2) (2019-06-06)
 
 
