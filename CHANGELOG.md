@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.7.0...v1.8.0) (2019-06-20)
+
+
+### Features
+
+* upgrade packages for import ([cd25375](https://github.com/informatievlaanderen/streetname-registry/commit/cd25375))
+
 # [1.7.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.6.2...v1.7.0) (2019-06-11)
 
 
