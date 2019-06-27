@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.8.1...v1.8.2) (2019-06-27)
+
+
+### Bug Fixes
+
+* fix logging for syndication ([6035e2d](https://github.com/informatievlaanderen/streetname-registry/commit/6035e2d))
+
 ## [1.8.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.8.0...v1.8.1) (2019-06-27)
 
 # [1.8.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.7.0...v1.8.0) (2019-06-20)
