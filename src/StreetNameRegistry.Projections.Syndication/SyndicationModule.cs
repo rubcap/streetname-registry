@@ -55,7 +55,7 @@ namespace StreetNameRegistry.Projections.Syndication
         private static void RunInMemoryDb(
             IServiceCollection services,
             ILoggerFactory loggerFactory,
-            ILogger<SyndicationModule> logger)
+            ILogger logger)
         {
             services
                 .AddDbContext<SyndicationContext>(options => options
@@ -65,7 +65,9 @@ namespace StreetNameRegistry.Projections.Syndication
             logger.LogWarning("Running InMemory for {Context}!", nameof(SyndicationContext));
         }
 
-        private static void RegisterHttpClient(IConfiguration configuration, IServiceCollection services)
+        private static void RegisterHttpClient(
+            IConfiguration configuration,
+            IServiceCollection services)
         {
             services
                 .AddHttpClient(

@@ -5,10 +5,6 @@ namespace StreetNameRegistry.Api.Extract.Infrastructure
 
     public class Program
     {
-        private static readonly DevelopmentCertificate DevelopmentCertificate = new DevelopmentCertificate(
-            "api.dev.straatnaam.basisregisters.vlaanderen.be.pfx",
-            "gemeenteregister!");
-
         public static void Main(string[] args) => CreateWebHostBuilder(args).Build().Run();
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args)
@@ -18,9 +14,12 @@ namespace StreetNameRegistry.Api.Extract.Infrastructure
                     {
                         Hosting =
                         {
-                            HttpPort = 3092,
-                            HttpsPort = 3446,
-                            HttpsCertificate = DevelopmentCertificate.ToCertificate,
+                            HttpPort = 4004
+                        },
+                        Logging =
+                        {
+                            WriteTextToConsole = false,
+                            WriteJsonToConsole = false
                         },
                         Runtime =
                         {

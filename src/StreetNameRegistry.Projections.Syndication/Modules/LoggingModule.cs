@@ -5,6 +5,7 @@ namespace StreetNameRegistry.Projections.Syndication.Modules
     using Destructurama;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Logging;
     using Serilog;
     using Serilog.Debugging;
 
@@ -24,7 +25,7 @@ namespace StreetNameRegistry.Projections.Syndication.Modules
                     fileSizeLimitBytes: 104857600,
                     rollOnFileSizeLimit: true,
                     rollingInterval: RollingInterval.Day)
-                .WriteTo.Console()
+                //.WriteTo.Console()
                 .Enrich.FromLogContext()
                 .Enrich.WithMachineName()
                 .Enrich.WithThreadId()
@@ -32,7 +33,11 @@ namespace StreetNameRegistry.Projections.Syndication.Modules
                 .Destructure.JsonNetTypes()
                 .CreateLogger();
 
-            services.AddLogging(l => l.AddSerilog(Log.Logger));
+            services.AddLogging(l =>
+            {
+                l.ClearProviders();
+                l.AddSerilog(Log.Logger);
+            });
         }
     }
 }
