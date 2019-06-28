@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.8.2...v1.8.3) (2019-06-28)
+
+
+### Bug Fixes
+
+* reference correct packages for documentation ([7d28cd6](https://github.com/informatievlaanderen/streetname-registry/commit/7d28cd6))
+
 ## [1.8.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.8.1...v1.8.2) (2019-06-27)
 
 
