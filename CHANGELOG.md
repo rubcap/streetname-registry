@@ -1,3 +1,10 @@
+## [1.8.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.8.3...v1.8.4) (2019-07-02)
+
+
+### Bug Fixes
+
+* list now displays correct homonym addition in german & english ([59925af](https://github.com/informatievlaanderen/streetname-registry/commit/59925af))
+
 ## [1.8.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.8.2...v1.8.3) (2019-06-28)
 
 
