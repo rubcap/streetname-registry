@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.8.4...v1.9.0) (2019-07-05)
+
+
+### Features
+
+* upgrade Be.Vlaanderen.Basisregisters.Api ([f2dd36b](https://github.com/informatievlaanderen/streetname-registry/commit/f2dd36b))
+
 ## [1.8.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.8.3...v1.8.4) (2019-07-02)
 
 
