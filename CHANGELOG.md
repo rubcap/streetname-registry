@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.9.0...v1.10.0) (2019-07-10)
+
+
+### Features
+
+* rename oslo id to persistent local id ([cd9fbb9](https://github.com/informatievlaanderen/streetname-registry/commit/cd9fbb9))
+
 # [1.9.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.8.4...v1.9.0) (2019-07-05)
 
 
