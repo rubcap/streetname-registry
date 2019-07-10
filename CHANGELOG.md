@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.1...v1.10.2) (2019-07-10)
+
+
+### Bug Fixes
+
+* fix migrations extract ([8ca953b](https://github.com/informatievlaanderen/streetname-registry/commit/8ca953b))
+
 ## [1.10.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.0...v1.10.1) (2019-07-10)
 
 
