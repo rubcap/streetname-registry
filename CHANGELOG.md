@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.0...v1.10.1) (2019-07-10)
+
+
+### Bug Fixes
+
+* give the correct name of the event in syndication ([7f70d04](https://github.com/informatievlaanderen/streetname-registry/commit/7f70d04))
+
 # [1.10.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.9.0...v1.10.0) (2019-07-10)
 
 
