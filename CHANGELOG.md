@@ -1,3 +1,10 @@
+## [1.10.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.2...v1.10.3) (2019-07-15)
+
+
+### Bug Fixes
+
+* correct datadog inits ([22fc3ec](https://github.com/informatievlaanderen/streetname-registry/commit/22fc3ec))
+
 ## [1.10.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.1...v1.10.2) (2019-07-10)
 
 
