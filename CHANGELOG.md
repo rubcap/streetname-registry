@@ -1,3 +1,10 @@
+## [1.10.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.3...v1.10.4) (2019-07-17)
+
+
+### Bug Fixes
+
+* do not hardcode logging to console ([a214c59](https://github.com/informatievlaanderen/streetname-registry/commit/a214c59))
+
 ## [1.10.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.2...v1.10.3) (2019-07-15)
 
 
