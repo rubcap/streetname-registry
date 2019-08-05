@@ -1,3 +1,10 @@
+## [1.10.5](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.4...v1.10.5) (2019-08-05)
+
+
+### Bug Fixes
+
+* streetname sort bosa is now by PersistentLocalId ([4ae3dd7](https://github.com/informatievlaanderen/streetname-registry/commit/4ae3dd7))
+
 ## [1.10.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.3...v1.10.4) (2019-07-17)
 
 
