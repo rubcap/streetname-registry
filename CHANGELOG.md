@@ -1,3 +1,11 @@
+## [1.10.6](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.5...v1.10.6) (2019-08-06)
+
+
+### Bug Fixes
+
+* bosa streetname version now offsets to belgian timezone ([7aad2cf](https://github.com/informatievlaanderen/streetname-registry/commit/7aad2cf))
+* display municipality languages for bosa search ([755896a](https://github.com/informatievlaanderen/streetname-registry/commit/755896a))
+
 ## [1.10.5](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.4...v1.10.5) (2019-08-05)
 
 
