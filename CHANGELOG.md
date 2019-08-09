@@ -1,3 +1,10 @@
+## [1.10.7](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.6...v1.10.7) (2019-08-09)
+
+
+### Bug Fixes
+
+* fix container id in logging ([c40607b](https://github.com/informatievlaanderen/streetname-registry/commit/c40607b))
+
 ## [1.10.6](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.5...v1.10.6) (2019-08-06)
 
 
