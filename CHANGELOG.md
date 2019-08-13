@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.7...v1.11.0) (2019-08-13)
+
+
+### Features
+
+* add missing event handlers where nothing was expected [#29](https://github.com/informatievlaanderen/streetname-registry/issues/29) ([35e315a](https://github.com/informatievlaanderen/streetname-registry/commit/35e315a))
+
 ## [1.10.7](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.6...v1.10.7) (2019-08-09)
 
 
