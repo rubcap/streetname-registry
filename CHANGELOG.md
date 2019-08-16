@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.11.0...v1.12.0) (2019-08-16)
+
+
+### Features
+
+* add wait for user input to importer ([fd1d14e](https://github.com/informatievlaanderen/streetname-registry/commit/fd1d14e))
+
 # [1.11.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.10.7...v1.11.0) (2019-08-13)
 
 
