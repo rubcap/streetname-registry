@@ -1,3 +1,12 @@
+## [1.12.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.12.0...v1.12.1) (2019-08-22)
+
+
+### Bug Fixes
+
+* bosa empty body does not crash anymore GR-855 ([c8aa3fd](https://github.com/informatievlaanderen/streetname-registry/commit/c8aa3fd))
+* bosa exact filter takes exact name into account ([0a06aa6](https://github.com/informatievlaanderen/streetname-registry/commit/0a06aa6))
+* return empty response when request has invalid data GR-856 ([c18b134](https://github.com/informatievlaanderen/streetname-registry/commit/c18b134))
+
 # [1.12.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.11.0...v1.12.0) (2019-08-16)
 
 
