@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.12.1...v1.13.0) (2019-08-22)
+
+
+### Features
+
+* extract datavlaanderen namespace to settings [#3](https://github.com/informatievlaanderen/streetname-registry/issues/3) ([e13a831](https://github.com/informatievlaanderen/streetname-registry/commit/e13a831))
+
 ## [1.12.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.12.0...v1.12.1) (2019-08-22)
 
 
