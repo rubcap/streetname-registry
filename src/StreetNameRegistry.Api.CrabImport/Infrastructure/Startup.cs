@@ -143,7 +143,16 @@ namespace StreetNameRegistry.Api.CrabImport.Infrastructure
                     Api =
                     {
                         VersionProvider = apiVersionProvider,
-                        Info = groupName => $"Basisregisters Vlaanderen - StreetName Registry API {groupName}"
+                        Info = groupName => $"Basisregisters Vlaanderen - StreetName Registry API {groupName}",
+                        CSharpClientOptions =
+                        {
+                            ClassName = "StreetNameRegistryCrabImport",
+                            Namespace = "Be.Vlaanderen.Basisregisters"
+                        },
+                        TypeScriptClientOptions =
+                        {
+                            ClassName = "StreetNameRegistryCrabImport"
+                        }
                     },
                     Server =
                     {

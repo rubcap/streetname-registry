@@ -156,7 +156,16 @@ namespace StreetNameRegistry.Projector.Infrastructure
                     Api =
                     {
                         VersionProvider = apiVersionProvider,
-                        Info = groupName => $"Basisregisters.Vlaanderen - StreetName Information Registry API {groupName}"
+                        Info = groupName => $"Basisregisters.Vlaanderen - StreetName Information Registry API {groupName}",
+                        CSharpClientOptions =
+                        {
+                            ClassName = "StreetNameRegistryProjector",
+                            Namespace = "Be.Vlaanderen.Basisregisters"
+                        },
+                        TypeScriptClientOptions =
+                        {
+                            ClassName = "StreetNameRegistryProjector"
+                        }
                     },
                     Server =
                     {

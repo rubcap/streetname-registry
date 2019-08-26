@@ -140,7 +140,16 @@ namespace StreetNameRegistry.Api.Legacy.Infrastructure
                     Api =
                     {
                         VersionProvider = apiVersionProvider,
-                        Info = groupName => $"Basisregisters Vlaanderen - StreetName Registry API {groupName}"
+                        Info = groupName => $"Basisregisters Vlaanderen - StreetName Registry API {groupName}",
+                        CSharpClientOptions =
+                        {
+                            ClassName = "StreetNameRegistry",
+                            Namespace = "Be.Vlaanderen.Basisregisters"
+                        },
+                        TypeScriptClientOptions =
+                        {
+                            ClassName = "StreetNameRegistry"
+                        }
                     },
                     Server =
                     {

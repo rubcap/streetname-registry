@@ -138,7 +138,16 @@ namespace StreetNameRegistry.Api.Extract.Infrastructure
                     Api =
                     {
                         VersionProvider = apiVersionProvider,
-                        Info = groupName => $"Basisregisters Vlaanderen - StreetName Registry API {groupName}"
+                        Info = groupName => $"Basisregisters Vlaanderen - StreetName Registry API {groupName}",
+                        CSharpClientOptions =
+                        {
+                            ClassName = "StreetNameRegistryExtract",
+                            Namespace = "Be.Vlaanderen.Basisregisters"
+                        },
+                        TypeScriptClientOptions =
+                        {
+                            ClassName = "StreetNameRegistryExtract"
+                        }
                     },
                     Server =
                     {
