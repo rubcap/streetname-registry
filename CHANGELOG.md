@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.13.0...v1.14.0) (2019-08-26)
+
+
+### Features
+
+* bump to .net 2.2.6 ([d6eaf38](https://github.com/informatievlaanderen/streetname-registry/commit/d6eaf38))
+
 # [1.13.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.12.1...v1.13.0) (2019-08-22)
 
 
