@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.0...v1.14.1) (2019-08-26)
+
+
+### Bug Fixes
+
+* fix swagger ([43c2f7e](https://github.com/informatievlaanderen/streetname-registry/commit/43c2f7e))
+
 # [1.14.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.13.0...v1.14.0) (2019-08-26)
 
 
