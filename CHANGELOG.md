@@ -1,3 +1,10 @@
+## [1.14.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.1...v1.14.2) (2019-08-26)
+
+
+### Bug Fixes
+
+* use fixed datadog tracing ([6b40209](https://github.com/informatievlaanderen/streetname-registry/commit/6b40209))
+
 ## [1.14.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.0...v1.14.1) (2019-08-26)
 
 
