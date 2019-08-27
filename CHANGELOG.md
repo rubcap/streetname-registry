@@ -1,3 +1,10 @@
+## [1.14.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.2...v1.14.3) (2019-08-27)
+
+
+### Bug Fixes
+
+* use new desiredstate columns for projections ([b59c39a](https://github.com/informatievlaanderen/streetname-registry/commit/b59c39a))
+
 ## [1.14.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.1...v1.14.2) (2019-08-26)
 
 
