@@ -1,3 +1,10 @@
+## [1.14.5](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.4...v1.14.5) (2019-08-29)
+
+
+### Bug Fixes
+
+* use columnstore for legacy syndication ([8907d63](https://github.com/informatievlaanderen/streetname-registry/commit/8907d63))
+
 ## [1.14.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.3...v1.14.4) (2019-08-27)
 
 
