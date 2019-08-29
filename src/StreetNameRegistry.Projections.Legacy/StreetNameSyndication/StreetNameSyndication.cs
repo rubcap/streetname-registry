@@ -2,6 +2,7 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameSyndication
 {
     using System;
     using Be.Vlaanderen.Basisregisters.GrAr.Provenance;
+    using Be.Vlaanderen.Basisregisters.ProjectionHandling.Runner.MigrationExtensions;
     using Infrastructure;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -108,6 +109,7 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameSyndication
                 .ForSqlServerIsClustered();
 
             b.Property(x => x.Position).ValueGeneratedNever();
+            b.HasIndex(x => x.Position).IsColumnStore($"CI_{TableName}_Position");
 
             b.Property(x => x.StreetNameId).IsRequired();
             b.Property(x => x.NisCode);
