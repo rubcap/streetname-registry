@@ -1,6 +1,7 @@
 namespace StreetNameRegistry.Projections.Extract
 {
     using Be.Vlaanderen.Basisregisters.ProjectionHandling.Runner;
+    using Be.Vlaanderen.Basisregisters.ProjectionHandling.Runner.MigrationExtensions;
     using Infrastructure;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Design;
@@ -45,7 +46,8 @@ namespace StreetNameRegistry.Projections.Extract
                 {
                     sqlServerOptions.EnableRetryOnFailure();
                     sqlServerOptions.MigrationsHistoryTable(MigrationTables.Extract, Schema.Extract);
-                });
+                })
+                .UseExtendedSqlServerMigrations();
 
             return new ExtractContext(builder.Options);
         }

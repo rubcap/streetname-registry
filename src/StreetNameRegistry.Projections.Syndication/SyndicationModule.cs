@@ -5,6 +5,7 @@ namespace StreetNameRegistry.Projections.Syndication
     using System.Net.Http;
     using Be.Vlaanderen.Basisregisters.DataDog.Tracing.Http;
     using Be.Vlaanderen.Basisregisters.DataDog.Tracing.Sql.EntityFrameworkCore;
+    using Be.Vlaanderen.Basisregisters.ProjectionHandling.Runner.MigrationExtensions;
     using Be.Vlaanderen.Basisregisters.ProjectionHandling.Syndication;
     using Autofac;
     using Infrastructure;
@@ -49,7 +50,8 @@ namespace StreetNameRegistry.Projections.Syndication
                     {
                         sqlServerOptions.EnableRetryOnFailure();
                         sqlServerOptions.MigrationsHistoryTable(MigrationTables.Syndication, Schema.Syndication);
-                    }));
+                    })
+                    .UseExtendedSqlServerMigrations());
         }
 
         private static void RunInMemoryDb(

@@ -7,6 +7,7 @@ namespace StreetNameRegistry.Projections.Syndication
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Logging;
     using Polly;
+    using Be.Vlaanderen.Basisregisters.ProjectionHandling.Runner.MigrationExtensions;
     using Infrastructure;
 
     public class MigrationsLogger { }
@@ -48,7 +49,8 @@ namespace StreetNameRegistry.Projections.Syndication
                     {
                         sqlServerOptions.EnableRetryOnFailure();
                         sqlServerOptions.MigrationsHistoryTable(MigrationTables.Syndication, Schema.Syndication);
-                    });
+                    })
+                .UseExtendedSqlServerMigrations();
 
             if (loggerFactory != null)
                 migratorOptions = migratorOptions.UseLoggerFactory(loggerFactory);
