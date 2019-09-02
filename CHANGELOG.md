@@ -1,3 +1,10 @@
+## [1.14.7](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.6...v1.14.7) (2019-09-02)
+
+
+### Bug Fixes
+
+* do not log to console write ([d67003b](https://github.com/informatievlaanderen/streetname-registry/commit/d67003b))
+
 ## [1.14.6](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.5...v1.14.6) (2019-09-02)
 
 
