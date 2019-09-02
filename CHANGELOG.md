@@ -1,3 +1,10 @@
+## [1.14.6](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.5...v1.14.6) (2019-09-02)
+
+
+### Bug Fixes
+
+* properly report errors ([b1d02cf](https://github.com/informatievlaanderen/streetname-registry/commit/b1d02cf))
+
 ## [1.14.5](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.4...v1.14.5) (2019-08-29)
 
 
