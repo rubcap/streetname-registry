@@ -1,3 +1,10 @@
+## [1.14.8](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.7...v1.14.8) (2019-09-03)
+
+
+### Bug Fixes
+
+* update problemdetails for xml response GR-829 ([39280b7](https://github.com/informatievlaanderen/streetname-registry/commit/39280b7))
+
 ## [1.14.7](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.6...v1.14.7) (2019-09-02)
 
 
