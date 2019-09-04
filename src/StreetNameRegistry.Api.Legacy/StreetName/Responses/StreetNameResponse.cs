@@ -95,7 +95,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         private readonly ResponseOptions _responseOptions;
 
         public StreetNameResponseExamples(IOptions<ResponseOptions> responseOptionsProvider)
-         => _responseOptions = responseOptionsProvider.Value;
+            => _responseOptions = responseOptionsProvider.Value;
 
         public object GetExamples()
         {
@@ -121,28 +121,24 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
     public class StreetNameNotFoundResponseExamples : IExamplesProvider
     {
         public object GetExamples()
-        {
-            return new ProblemDetails
+            => new ProblemDetails
             {
                 HttpStatus = StatusCodes.Status404NotFound,
                 Title = ProblemDetails.DefaultTitle,
                 Detail = "Onbestaande straatnaam.",
                 ProblemInstanceUri = ProblemDetails.GetProblemNumber()
             };
-        }
     }
 
     public class StreetNameGoneResponseExamples : IExamplesProvider
     {
         public object GetExamples()
-        {
-            return new ProblemDetails
+            => new ProblemDetails
             {
                 HttpStatus = StatusCodes.Status410Gone,
                 Title = ProblemDetails.DefaultTitle,
                 Detail = "Straatnaam verwijderd.",
                 ProblemInstanceUri = ProblemDetails.GetProblemNumber()
             };
-        }
     }
 }

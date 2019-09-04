@@ -66,7 +66,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Query
         }
     }
 
-    internal class StreetNameSorting : ISorting
+    public class StreetNameSorting : ISorting
     {
         public IEnumerable<string> SortableFields { get; } = new[]
         {

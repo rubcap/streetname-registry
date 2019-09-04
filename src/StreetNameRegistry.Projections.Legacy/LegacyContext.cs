@@ -27,7 +27,6 @@ namespace StreetNameRegistry.Projections.Legacy
         // This needs to be DbContextOptions<T> for Autofac!
         public LegacyContext(DbContextOptions<LegacyContext> options)
             : base(options) { }
-
     }
 
     public class ConfigBasedContextFactory : IDesignTimeDbContextFactory<LegacyContext>

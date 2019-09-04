@@ -17,8 +17,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Requests
     public class StreetNameBosaRequestExamples : IExamplesProvider
     {
         public object GetExamples()
-        {
-            return new BosaStreetNameRequest
+            => new BosaStreetNameRequest
             {
                 Straatnaam = new ZoekGeografischeNaam
                 {
@@ -38,6 +37,5 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Requests
                     VersieId = DateTimeOffset.Now
                 }
             };
-        }
     }
 }

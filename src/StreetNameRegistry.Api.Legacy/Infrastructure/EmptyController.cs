@@ -1,8 +1,6 @@
 namespace StreetNameRegistry.Api.Legacy.Infrastructure
 {
     using System.Reflection;
-    using System.Threading;
-    using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Net.Http.Headers;
     using Be.Vlaanderen.Basisregisters.Api;
@@ -13,11 +11,9 @@ namespace StreetNameRegistry.Api.Legacy.Infrastructure
     {
         [HttpGet]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public IActionResult Get(
-            [FromServices] IHostingEnvironment hostingEnvironment,
-            CancellationToken cancellationToken = default)
+        public IActionResult Get()
             => Request.Headers[HeaderNames.Accept].ToString().Contains("text/html")
                 ? (IActionResult)new RedirectResult("/docs")
-                : new OkObjectResult($"Welcome to the Basisregisters Vlaanderen StreetName Api v{Assembly.GetEntryAssembly().GetName().Version}.");
+                : new OkObjectResult($"Welcome to the Basisregisters Vlaanderen StreetName Legacy Api {Assembly.GetEntryAssembly().GetVersionText()}.");
     }
 }

@@ -25,7 +25,7 @@ namespace StreetNameRegistry.Projections.Extract.StreetNameExtract
 
     public class StreetNameExtractItemConfiguration : IEntityTypeConfiguration<StreetNameExtractItem>
     {
-        public const string TableName = "StreetName";
+        private const string TableName = "StreetName";
 
         public void Configure(EntityTypeBuilder<StreetNameExtractItem> builder)
         {

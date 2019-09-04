@@ -66,8 +66,14 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         public List<Gemeentenaam> GemeenteNamen { get; set; }
 
         public StreetNameBosaItemResponse(
-            string id, string gemeenteId, string naamruimte, string gemeenteNaamruimte,
-            DateTimeOffset? version, DateTimeOffset? gemeenteVersion, StraatnaamStatus status, IEnumerable<GeografischeNaam> straatnamen,
+            string id,
+            string gemeenteId,
+            string naamruimte,
+            string gemeenteNaamruimte,
+            DateTimeOffset? version,
+            DateTimeOffset? gemeenteVersion,
+            StraatnaamStatus status,
+            IEnumerable<GeografischeNaam> straatnamen,
             IEnumerable<GeografischeNaam> gemeenteNamen)
         {
             Identificator = new Identificator(naamruimte, id, version);

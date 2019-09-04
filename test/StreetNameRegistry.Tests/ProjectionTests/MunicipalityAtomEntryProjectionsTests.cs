@@ -11,7 +11,7 @@ namespace StreetNameRegistry.Tests.ProjectionTests
     using Xunit;
     using Xunit.Abstractions;
 
-    public class MunicipalityAtomEntryProjectionsTests : SyndicationProjectionTest<SyndicationContext, MunicipalityEvent, SyndicationContent<Gemeente>, MunicipalitySyndiciationItemProjections>
+    public class MunicipalityAtomEntryProjectionsTests : SyndicationProjectionTest<SyndicationContext, MunicipalityEvent, SyndicationContent<Gemeente>, MunicipalitySyndiciationProjections>
     {
         public MunicipalityAtomEntryProjectionsTests(ITestOutputHelper output) : base(output)
         {

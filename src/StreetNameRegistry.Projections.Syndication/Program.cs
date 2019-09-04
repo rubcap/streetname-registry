@@ -87,7 +87,7 @@ namespace StreetNameRegistry.Projections.Syndication
                 true,
                 container.GetService<ILogger<Program>>(),
                 container.GetService<IRegistryAtomFeedReader>(),
-                new MunicipalitySyndiciationItemProjections(),
+                new MunicipalitySyndiciationProjections(),
                 new MunicipalityLatestProjections());
 
             yield return municipalityRunner.CatchUpAsync(
@@ -104,7 +104,6 @@ namespace StreetNameRegistry.Projections.Syndication
 
             var tempProvider = services.BuildServiceProvider();
             builder.RegisterModule(new SyndicationModule(configuration, services, tempProvider.GetService<ILoggerFactory>()));
-
 
             builder.Populate(services);
 

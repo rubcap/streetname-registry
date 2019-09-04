@@ -73,11 +73,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName
             [FromServices] IOptions<ResponseOptions> responseOptions,
             [FromRoute] int persistentLocalId,
             CancellationToken cancellationToken = default)
-        {
-            return Ok(await
-                new StreetNameDetailQuery(legacyContext, syndicationContext, responseOptions)
-                    .FilterAsync(persistentLocalId, cancellationToken));
-        }
+            => Ok(await new StreetNameDetailQuery(legacyContext, syndicationContext, responseOptions).FilterAsync(persistentLocalId, cancellationToken));
 
         /// <summary>
         /// Vraag een specifieke versie van een straatnaam op.
@@ -117,7 +113,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName
             {
                 ObjectId = streetName.NisCode,
                 Detail = string.Format(responseOptions.Value.GemeenteDetailUrl, streetName.NisCode),
-                // todo: get the name for this nisCode's municipality.
+                // TODO: get the name for this nisCode's municipality.
                 // Not feasible yet, at least not yet without calling the Municipality Api.
                 Gemeentenaam = new Gemeentenaam(new GeografischeNaam(null, Taal.NL))
             };

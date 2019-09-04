@@ -7,9 +7,9 @@ namespace StreetNameRegistry.Projections.Syndication.Municipality
     using Be.Vlaanderen.Basisregisters.GrAr.Legacy;
     using Be.Vlaanderen.Basisregisters.ProjectionHandling.Syndication;
 
-    public class MunicipalitySyndiciationItemProjections : AtomEntryProjectionHandlerModule<MunicipalityEvent, SyndicationContent<Gemeente>, SyndicationContext>
+    public class MunicipalitySyndiciationProjections : AtomEntryProjectionHandlerModule<MunicipalityEvent, SyndicationContent<Gemeente>, SyndicationContext>
     {
-        public MunicipalitySyndiciationItemProjections()
+        public MunicipalitySyndiciationProjections()
         {
             When(MunicipalityEvent.MunicipalityWasRegistered, AddSyndicationItemEntry);
             When(MunicipalityEvent.MunicipalityNisCodeWasDefined, AddSyndicationItemEntry);

@@ -26,6 +26,7 @@ namespace StreetNameRegistry.Api.Extract.Extracts
         /// Vraag een dump van het volledige register op.
         /// </summary>
         /// <param name="context"></param>
+        /// <param name="syndicationContext"></param>
         /// <param name="cancellationToken"></param>
         /// <response code="200">Als straatnaamregister kan gedownload worden.</response>
         /// <response code="500">Als er een interne fout is opgetreden.</response>
