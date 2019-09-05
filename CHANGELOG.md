@@ -1,3 +1,10 @@
+## [1.14.10](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.9...v1.14.10) (2019-09-05)
+
+
+### Bug Fixes
+
+* initial jira version ([3a58880](https://github.com/informatievlaanderen/streetname-registry/commit/3a58880))
+
 ## [1.14.9](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.8...v1.14.9) (2019-09-04)
 
 
