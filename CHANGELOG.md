@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.10...v1.15.0) (2019-09-12)
+
+
+### Features
+
+* keep track of how many times lastchanged has errored ([c81eb82](https://github.com/informatievlaanderen/streetname-registry/commit/c81eb82))
+
 ## [1.14.10](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.9...v1.14.10) (2019-09-05)
 
 
