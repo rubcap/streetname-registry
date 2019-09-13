@@ -75,7 +75,9 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameList
 
             builder.HasIndex(x => x.PersistentLocalId).ForSqlServerIsClustered();
             builder.HasIndex(x => x.NisCode);
-            builder.HasIndex(x => x.Removed);
+
+            // This index speeds up the hardcoded first filter in StreetNameListQuery
+            builder.HasIndex(x => new { x.Complete, x.Removed });
         }
     }
 }
