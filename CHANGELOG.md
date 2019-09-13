@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.0...v1.15.1) (2019-09-13)
+
+
+### Bug Fixes
+
+* update redis lastchangedlist to log time of lasterror ([18f99dc](https://github.com/informatievlaanderen/streetname-registry/commit/18f99dc))
+
 # [1.15.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.14.10...v1.15.0) (2019-09-12)
 
 
