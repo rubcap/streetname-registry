@@ -98,11 +98,7 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameName
 
             builder.HasIndex(StreetNameName.VersionTimestampBackingPropertyName);
             builder.HasIndex(p => p.Status);
-
-            builder.HasIndex(p => p.IsFlemishRegion);
-            builder.HasIndex(p => p.Removed);
-            builder.HasIndex(p => p.Complete);
-
+            
             builder.HasIndex(p => p.NameDutch);
             builder.HasIndex(p => p.NameFrench);
             builder.HasIndex(p => p.NameGerman);
