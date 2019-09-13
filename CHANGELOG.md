@@ -1,3 +1,10 @@
+## [1.15.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.2...v1.15.3) (2019-09-13)
+
+
+### Bug Fixes
+
+* remove unneeded streetnamename indexes ([5067563](https://github.com/informatievlaanderen/streetname-registry/commit/5067563))
+
 ## [1.15.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.1...v1.15.2) (2019-09-13)
 
 
