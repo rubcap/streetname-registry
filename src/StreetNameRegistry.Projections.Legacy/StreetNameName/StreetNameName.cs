@@ -90,13 +90,23 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameName
             builder.Property(p => p.Complete);
             builder.Property(p => p.Removed);
 
+            // This index speeds up the hardcoded first filter in StreetNameBosaQuery
+            builder.HasIndex(p => new { p.Removed, p.IsFlemishRegion, p.Complete });
+
             builder.HasIndex(p => p.NisCode);
             builder.HasIndex(p => p.PersistentLocalId);
+
+            builder.HasIndex(StreetNameName.VersionTimestampBackingPropertyName);
             builder.HasIndex(p => p.Status);
+
             builder.HasIndex(p => p.IsFlemishRegion);
             builder.HasIndex(p => p.Removed);
             builder.HasIndex(p => p.Complete);
-            builder.HasIndex(StreetNameName.VersionTimestampBackingPropertyName);
+
+            builder.HasIndex(p => p.NameDutch);
+            builder.HasIndex(p => p.NameFrench);
+            builder.HasIndex(p => p.NameGerman);
+            builder.HasIndex(p => p.NameEnglish);
 
             builder.HasIndex(p => p.NameDutchSearch);
             builder.HasIndex(p => p.NameFrenchSearch);
