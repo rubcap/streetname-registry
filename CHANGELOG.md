@@ -1,3 +1,10 @@
+## [1.15.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.3...v1.15.4) (2019-09-16)
+
+
+### Bug Fixes
+
+* correct bosa exact search GR-857 ([ecded98](https://github.com/informatievlaanderen/streetname-registry/commit/ecded98))
+
 ## [1.15.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.2...v1.15.3) (2019-09-13)
 
 
