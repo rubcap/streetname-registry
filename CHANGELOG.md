@@ -1,3 +1,10 @@
+## [1.15.5](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.4...v1.15.5) (2019-09-16)
+
+
+### Bug Fixes
+
+* use generic dbtraceconnection ([7913401](https://github.com/informatievlaanderen/streetname-registry/commit/7913401))
+
 ## [1.15.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.3...v1.15.4) (2019-09-16)
 
 
