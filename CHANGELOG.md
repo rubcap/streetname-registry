@@ -1,3 +1,10 @@
+## [1.15.7](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.6...v1.15.7) (2019-09-17)
+
+
+### Bug Fixes
+
+* upgrade api for error headers ([2f24b69](https://github.com/informatievlaanderen/streetname-registry/commit/2f24b69))
+
 ## [1.15.6](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.5...v1.15.6) (2019-09-17)
 
 
