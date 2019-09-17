@@ -1,3 +1,10 @@
+## [1.15.6](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.5...v1.15.6) (2019-09-17)
+
+
+### Bug Fixes
+
+* fix contains search ([db2437c](https://github.com/informatievlaanderen/streetname-registry/commit/db2437c))
+
 ## [1.15.5](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.4...v1.15.5) (2019-09-16)
 
 
