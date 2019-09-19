@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.7...v1.16.0) (2019-09-19)
+
+
+### Features
+
+* upgrade NTS & shaperon packages ([c60f8b5](https://github.com/informatievlaanderen/streetname-registry/commit/c60f8b5))
+
 ## [1.15.7](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.6...v1.15.7) (2019-09-17)
 
 
