@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.16.0...v1.17.0) (2019-09-25)
+
+
+### Features
+
+* upgrade projector and removed explicit start of projections ([e7fb789](https://github.com/informatievlaanderen/streetname-registry/commit/e7fb789))
+
 # [1.16.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.15.7...v1.16.0) (2019-09-19)
 
 
