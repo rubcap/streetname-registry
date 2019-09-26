@@ -1,3 +1,10 @@
+## [1.17.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.1...v1.17.2) (2019-09-26)
+
+
+### Bug Fixes
+
+* update asset to fix importer ([7ee93a7](https://github.com/informatievlaanderen/streetname-registry/commit/7ee93a7))
+
 ## [1.17.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.0...v1.17.1) (2019-09-26)
 
 
