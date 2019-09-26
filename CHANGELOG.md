@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.0...v1.17.1) (2019-09-26)
+
+
+### Bug Fixes
+
+* resume projections on startup ([1e9190a](https://github.com/informatievlaanderen/streetname-registry/commit/1e9190a))
+
 # [1.17.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.16.0...v1.17.0) (2019-09-25)
 
 
