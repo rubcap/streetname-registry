@@ -1,3 +1,10 @@
+## [1.17.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.2...v1.17.3) (2019-09-30)
+
+
+### Bug Fixes
+
+* check removed before completeness GR-900 ([eb26fd4](https://github.com/informatievlaanderen/streetname-registry/commit/eb26fd4))
+
 ## [1.17.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.1...v1.17.2) (2019-09-26)
 
 
