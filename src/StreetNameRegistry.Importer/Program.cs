@@ -29,13 +29,6 @@ namespace StreetNameRegistry.Importer
                 var commandProcessor = new CommandProcessorBuilder<int>(new StreetNameCommandGenerator())
                     .WithCommandLineOptions(options.ImportArguments)
                     .UseSerilog(cfg => cfg
-                        .WriteTo.File(
-                            "tracing.log",
-                            LogEventLevel.Verbose,
-                            retainedFileCountLimit: 20,
-                            fileSizeLimitBytes: 104857600,
-                            rollOnFileSizeLimit: true,
-                            rollingInterval: RollingInterval.Day)
                         .WriteTo.Console(LogEventLevel.Information))
                     .UseHttpApiProxyConfig(settings)
                     .UseCommandProcessorConfig(settings)
