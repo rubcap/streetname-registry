@@ -1,3 +1,11 @@
+## [1.17.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.3...v1.17.4) (2019-10-14)
+
+
+### Bug Fixes
+
+* push to correct docker repo ([a2d4d11](https://github.com/informatievlaanderen/streetname-registry/commit/a2d4d11))
+* trigger build :( ([e775c3e](https://github.com/informatievlaanderen/streetname-registry/commit/e775c3e))
+
 ## [1.17.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.2...v1.17.3) (2019-09-30)
 
 
