@@ -21,7 +21,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         /// De identificator van de straatnaam.
         /// </summary>
         [DataMember(Name = "Identificator", Order = 1)]
-        public Identificator Identificator { get; set; }
+        public StraatnaamIdentificator Identificator { get; set; }
 
         /// <summary>
         /// De gemeente aan dewelke de straatnaam is toegewezen.
@@ -62,7 +62,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
             string homonymAdditionGerman = null,
             string homonymAdditionEnglish = null)
         {
-            Identificator = new Identificator(naamruimte, persistentLocalId.ToString(), version);
+            Identificator = new StraatnaamIdentificator(naamruimte, persistentLocalId.ToString(), version);
             StraatnaamStatus = status;
             Gemeente = gemeente;
 

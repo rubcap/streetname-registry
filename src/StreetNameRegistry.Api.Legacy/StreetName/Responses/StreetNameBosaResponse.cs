@@ -39,7 +39,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         /// De identificator van de straatnaam.
         /// </summary>
         [DataMember(Name = "Identificator", Order = 1)]
-        public Identificator Identificator { get; set; }
+        public StraatnaamIdentificator Identificator { get; set; }
 
         /// <summary>
         /// Een lijst van straatnamen, per taal.
@@ -57,7 +57,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         /// De identificator van de gemeente.
         /// </summary>
         [DataMember(Name = "GemeenteIdentificator", Order = 4)]
-        public Identificator GemeenteIdentificator { get; set; }
+        public GemeenteIdentificator GemeenteIdentificator { get; set; }
 
         /// <summary>
         /// Een lijst van namen van de gekoppelde gemeente, per taal.
@@ -76,8 +76,8 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
             IEnumerable<GeografischeNaam> straatnamen,
             IEnumerable<GeografischeNaam> gemeenteNamen)
         {
-            Identificator = new Identificator(naamruimte, id, version);
-            GemeenteIdentificator = new Identificator(gemeenteNaamruimte, gemeenteId, gemeenteVersion);
+            Identificator = new StraatnaamIdentificator(naamruimte, id, version);
+            GemeenteIdentificator = new GemeenteIdentificator(gemeenteNaamruimte, gemeenteId, gemeenteVersion);
             Straatnamen = straatnamen.Select(g => new Straatnaam(g)).ToList();
             GemeenteNamen = (gemeenteNamen?.Select(g => new Gemeentenaam(g)) ?? Enumerable.Empty<Gemeentenaam>()).ToList();
             StraatnaamStatus = status;

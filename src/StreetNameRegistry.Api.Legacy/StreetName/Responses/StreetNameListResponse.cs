@@ -38,7 +38,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         /// De identificator van de straatnaam.
         /// </summary>
         [DataMember(Name = "Identificator", Order = 1)]
-        public Identificator Identificator { get; set; }
+        public StraatnaamIdentificator Identificator { get; set; }
 
         /// <summary>
         /// De URL die naar de details van de meeste recente versie van een enkele straatnaam leidt.
@@ -66,7 +66,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
             GeografischeNaam homoniemToevoeging,
             DateTimeOffset? version)
         {
-            Identificator = new Identificator(naamruimte, id?.ToString(), version);
+            Identificator = new StraatnaamIdentificator(naamruimte, id?.ToString(), version);
             Detail = new Uri(string.Format(detail, id));
             Straatnaam = new Straatnaam(geografischeNaam);
 

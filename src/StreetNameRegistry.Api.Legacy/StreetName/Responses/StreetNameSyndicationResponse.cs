@@ -139,7 +139,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         /// De identificator van de straatnaam.
         /// </summary>
         [DataMember(Name = "Identificator", Order = 2)]
-        public Identificator Identificator { get; set; }
+        public StraatnaamIdentificator Identificator { get; set; }
 
         /// <summary>
         /// De officiële namen van de straatnaam.
@@ -198,7 +198,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         {
             StreetNameId = streetNameId;
             NisCode = nisCode;
-            Identificator = new Identificator(naamruimte, persistentLocalId?.ToString(CultureInfo.InvariantCulture), version);
+            Identificator = new StraatnaamIdentificator(naamruimte, persistentLocalId?.ToString(CultureInfo.InvariantCulture), version);
             StreetNameStatus = status?.ConvertFromStreetNameStatus();
             IsComplete = isComplete;
 
