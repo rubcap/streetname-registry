@@ -38,7 +38,7 @@ namespace StreetNameRegistry.Projections.Syndication.Municipality
                 {
                     MunicipalityId = entry.Content.Object.Id,
                     NisCode = entry.Content.Object.Identificator?.ObjectId,
-                    Version = entry.Content.Object.Identificator?.Versie == DateTimeOffset.MinValue ? null : entry.Content.Object.Identificator?.Versie,
+                    Version = entry.Content.Object.Identificator?.Versie,
                     Position = long.Parse(entry.FeedEntry.Id),
                     PrimaryLanguage = entry.Content.Object.OfficialLanguages.FirstOrDefault()
                 };
@@ -52,7 +52,7 @@ namespace StreetNameRegistry.Projections.Syndication.Municipality
             else
             {
                 municipalityLatestItem.NisCode = entry.Content.Object.Identificator?.ObjectId;
-                municipalityLatestItem.Version = entry.Content.Object.Identificator?.Versie == DateTimeOffset.MinValue ? null : entry.Content.Object.Identificator?.Versie;
+                municipalityLatestItem.Version = entry.Content.Object.Identificator?.Versie;
                 municipalityLatestItem.Position = long.Parse(entry.FeedEntry.Id);
                 municipalityLatestItem.PrimaryLanguage = entry.Content.Object.OfficialLanguages.FirstOrDefault();
 
