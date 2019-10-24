@@ -1,3 +1,11 @@
+## [1.17.5](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.4...v1.17.5) (2019-10-24)
+
+
+### Bug Fixes
+
+* no need to check since we used to do .Value ([72dd538](https://github.com/informatievlaanderen/streetname-registry/commit/72dd538))
+* upgrade grar common ([a336465](https://github.com/informatievlaanderen/streetname-registry/commit/a336465))
+
 ## [1.17.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.3...v1.17.4) (2019-10-14)
 
 
