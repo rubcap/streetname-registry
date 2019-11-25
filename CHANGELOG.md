@@ -1,3 +1,16 @@
+# [1.18.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.6...v1.18.0) (2019-11-25)
+
+
+### Bug Fixes
+
+* removed streetname doesn't crash remove status event in extract ([069270e](https://github.com/informatievlaanderen/streetname-registry/commit/069270e))
+
+
+### Features
+
+* API list count valid id's in indexed view ([ef31c11](https://github.com/informatievlaanderen/streetname-registry/commit/ef31c11))
+* update packages to include count func ([8e7eef4](https://github.com/informatievlaanderen/streetname-registry/commit/8e7eef4))
+
 ## [1.17.6](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.5...v1.17.6) (2019-10-24)
 
 ## [1.17.5](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.4...v1.17.5) (2019-10-24)
