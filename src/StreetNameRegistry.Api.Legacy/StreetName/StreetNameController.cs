@@ -38,6 +38,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName
     using System.Threading;
     using System.Threading.Tasks;
     using System.Xml;
+    using Be.Vlaanderen.Basisregisters.Api.Search;
     using ProblemDetails = Be.Vlaanderen.Basisregisters.BasicApiProblem.ProblemDetails;
 
     [ApiVersion("1.0")]
@@ -172,8 +173,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName
                     pagination,
                     filtering.ShouldFilter ? null : (Func<IQueryable<StreetNameListItem>, long>) Count);
 
-            Response.AddPaginationResponse(pagedStreetNames.PaginationInfo);
-            Response.AddSortingResponse(sorting.SortBy, sorting.SortOrder);
+            Response.AddPagedQueryResultHeaders(pagedStreetNames);
 
             return Ok(
                 new StreetNameListResponse
@@ -269,7 +269,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName
                 context,
                 filtering.Filter?.ContainsEvent ?? false,
                 filtering.Filter?.ContainsObject ?? false)
-                .Fetch(filtering, sorting, pagination);
+                .Fetch(filtering, sorting, pagination, items => 0);
 
             Response.AddPaginationResponse(pagedStreetNames.PaginationInfo);
             Response.AddSortingResponse(sorting.SortBy, sorting.SortOrder);
