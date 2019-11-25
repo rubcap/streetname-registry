@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.18.0...v1.19.0) (2019-11-25)
+
+
+### Features
+
+* upgrade api package ([8190372](https://github.com/informatievlaanderen/streetname-registry/commit/8190372))
+
 # [1.18.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.17.6...v1.18.0) (2019-11-25)
 
 
