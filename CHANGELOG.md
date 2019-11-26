@@ -1,3 +1,10 @@
+## [1.19.2](https://github.com/informatievlaanderen/streetname-registry/compare/v1.19.1...v1.19.2) (2019-11-26)
+
+
+### Bug Fixes
+
+* correct handling removed status in extract ([01a4185](https://github.com/informatievlaanderen/streetname-registry/commit/01a4185))
+
 ## [1.19.1](https://github.com/informatievlaanderen/streetname-registry/compare/v1.19.0...v1.19.1) (2019-11-25)
 
 # [1.19.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.18.0...v1.19.0) (2019-11-25)
