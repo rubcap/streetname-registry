@@ -1,3 +1,10 @@
+## [1.19.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.19.3...v1.19.4) (2019-11-27)
+
+
+### Bug Fixes
+
+* correct extract filename to Straatnaam.dbf ([bd920fa](https://github.com/informatievlaanderen/streetname-registry/commit/bd920fa))
+
 ## [1.19.3](https://github.com/informatievlaanderen/streetname-registry/compare/v1.19.2...v1.19.3) (2019-11-26)
 
 
