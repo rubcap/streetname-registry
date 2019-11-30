@@ -29,11 +29,13 @@ namespace StreetNameRegistry.Importer
                 var commandProcessor = new CommandProcessorBuilder<int>(new StreetNameCommandGenerator())
                     .WithCommandLineOptions(options.ImportArguments)
                     .UseSerilog(cfg => cfg
+                        .WriteTo.File("tracing.log", LogEventLevel.Verbose)
                         .WriteTo.Console(LogEventLevel.Information))
                     .UseHttpApiProxyConfig(settings)
                     .UseCommandProcessorConfig(settings)
                     .UseDefaultSerializerSettingsForCrabImports()
                     .ConfigureImportFeedFromAssembly(Assembly.GetExecutingAssembly())
+                    //.UseApiProxyFactory(FileBasedProxyFactory.BuildFileBasedProxyFactory)
                     .Build();
 
                 WaitForStart(settings);

@@ -53,6 +53,7 @@
     <Compile Include="Crab\CrabQueries.cs" />
     <Compile Include="Crab\MapLogging.cs" />
     <Compile Include="Crab\StreetNameMappings.cs" />
+    <Compile Include="FileBasedProxy.cs" />
     <Compile Include="StreetNameCommandGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
