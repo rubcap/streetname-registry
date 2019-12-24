@@ -13,6 +13,7 @@ namespace StreetNameRegistry.Projector.Infrastructure
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Diagnostics.HealthChecks;
     using Microsoft.Extensions.Logging;
+    using Microsoft.Extensions.Hosting;
     using Modules;
     using StreetNameRegistry.Projections.Extract;
     using StreetNameRegistry.Projections.Legacy;
@@ -114,8 +115,8 @@ namespace StreetNameRegistry.Projector.Infrastructure
         public void Configure(
             IServiceProvider serviceProvider,
             IApplicationBuilder app,
-            IHostingEnvironment env,
-            IApplicationLifetime appLifetime,
+            IWebHostEnvironment env,
+            IHostApplicationLifetime appLifetime,
             ILoggerFactory loggerFactory,
             IApiVersionDescriptionProvider apiVersionProvider,
             ApiDataDogToggle datadogToggle,

@@ -6,23 +6,23 @@ namespace StreetNameRegistry.Projections.Extract
     {
         public static readonly StreetNameDbaseSchema Schema = new StreetNameDbaseSchema();
 
-        public DbaseString id { get; }
+        public DbaseCharacter id { get; }
         public DbaseInt32 straatnmid { get; }
-        public DbaseString versieid { get; }
-        public DbaseString gemeenteid { get; }
-        public DbaseString straatnm { get; }
-        public DbaseString homoniemtv { get; }
-        public DbaseString status { get; }
+        public DbaseCharacter versieid { get; }
+        public DbaseCharacter gemeenteid { get; }
+        public DbaseCharacter straatnm { get; }
+        public DbaseCharacter homoniemtv { get; }
+        public DbaseCharacter status { get; }
 
         public StreetNameDbaseRecord()
         {
-            id = new DbaseString(Schema.id);
+            id = new DbaseCharacter(Schema.id);
             straatnmid = new DbaseInt32(Schema.straatnmid);
-            versieid = new DbaseString(Schema.versieid);
-            gemeenteid = new DbaseString(Schema.gemeenteid);
-            straatnm = new DbaseString(Schema.straatnm);
-            homoniemtv = new DbaseString(Schema.homoniemtv);
-            status = new DbaseString(Schema.status);
+            versieid = new DbaseCharacter(Schema.versieid);
+            gemeenteid = new DbaseCharacter(Schema.gemeenteid);
+            straatnm = new DbaseCharacter(Schema.straatnm);
+            homoniemtv = new DbaseCharacter(Schema.homoniemtv);
+            status = new DbaseCharacter(Schema.status);
 
             Values = new DbaseFieldValue[]
             {
