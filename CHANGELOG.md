@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.19.5...v2.0.0) (2019-12-24)
+
+
+### Code Refactoring
+
+* upgrade to netcoreapp31 ([da4ea9e](https://github.com/informatievlaanderen/streetname-registry/commit/da4ea9e))
+
+
+### BREAKING CHANGES
+
+* Upgrade to .NET Core 3.1
+
 ## [1.19.5](https://github.com/informatievlaanderen/streetname-registry/compare/v1.19.4...v1.19.5) (2019-11-28)
 
 ## [1.19.4](https://github.com/informatievlaanderen/streetname-registry/compare/v1.19.3...v1.19.4) (2019-11-27)
