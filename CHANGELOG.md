@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.0.0...v2.1.0) (2020-01-03)
+
+
+### Features
+
+* allow only one projector instance ([c668b77](https://github.com/informatievlaanderen/streetname-registry/commit/c668b77))
+
 # [2.0.0](https://github.com/informatievlaanderen/streetname-registry/compare/v1.19.5...v2.0.0) (2019-12-24)
 
 
