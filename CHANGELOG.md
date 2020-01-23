@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.1.1...v2.2.0) (2020-01-23)
+
+
+### Features
+
+* use distributed lock for syndication ([330ca69](https://github.com/informatievlaanderen/streetname-registry/commit/330ca69))
+
 ## [2.1.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.1.0...v2.1.1) (2020-01-16)
 
 
