@@ -1,3 +1,10 @@
+## [2.3.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.3.1...v2.3.2) (2020-01-24)
+
+
+### Bug Fixes
+
+* add syndication to api references ([d2c24de](https://github.com/informatievlaanderen/streetname-registry/commit/d2c24de))
+
 ## [2.3.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.3.0...v2.3.1) (2020-01-23)
 
 
