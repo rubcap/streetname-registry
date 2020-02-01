@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.3.2...v2.4.0) (2020-02-01)
+
+
+### Features
+
+* upgrade netcoreapp31 and dependencies ([77171a8](https://github.com/informatievlaanderen/streetname-registry/commit/77171a8))
+
 ## [2.3.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.3.1...v2.3.2) (2020-01-24)
 
 
