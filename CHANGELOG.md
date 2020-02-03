@@ -1,3 +1,11 @@
+## [2.4.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.1...v2.4.2) (2020-02-03)
+
+
+### Bug Fixes
+
+* homoniemToevoeging can be null ([6eb91c8](https://github.com/informatievlaanderen/streetname-registry/commit/6eb91c8))
+* next url is nullable ([ac03c71](https://github.com/informatievlaanderen/streetname-registry/commit/ac03c71))
+
 ## [2.4.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.0...v2.4.1) (2020-02-03)
 
 
