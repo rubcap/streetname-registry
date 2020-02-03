@@ -128,6 +128,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         public ProblemDetails GetExamples()
             => new ProblemDetails
             {
+                ProblemTypeUri = "urn:be.vlaanderen.basisregisters.api:streetname:not-found",
                 HttpStatus = StatusCodes.Status404NotFound,
                 Title = ProblemDetails.DefaultTitle,
                 Detail = "Onbestaande straatnaam.",
@@ -140,6 +141,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         public ProblemDetails GetExamples()
             => new ProblemDetails
             {
+                ProblemTypeUri = "urn:be.vlaanderen.basisregisters.api:streetname:gone",
                 HttpStatus = StatusCodes.Status410Gone,
                 Title = ProblemDetails.DefaultTitle,
                 Detail = "Straatnaam verwijderd.",
