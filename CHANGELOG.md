@@ -1,3 +1,10 @@
+## [2.4.3](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.2...v2.4.3) (2020-02-03)
+
+
+### Bug Fixes
+
+* add type to problemdetails ([227a301](https://github.com/informatievlaanderen/streetname-registry/commit/227a301))
+
 ## [2.4.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.1...v2.4.2) (2020-02-03)
 
 
