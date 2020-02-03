@@ -62,8 +62,8 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         /// <summary>
         /// De homoniemtoevoeging in het Nederlands.
         /// </summary>
-        [DataMember(Name = "HomoniemToevoeging", Order = 4)]
-        [JsonProperty(Required = Required.DisallowNull)]
+        [DataMember(Name = "HomoniemToevoeging", Order = 4, EmitDefaultValue = false)]
+        [JsonProperty(Required = Required.Default)]
         public HomoniemToevoeging HomoniemToevoeging { get; set; }
 
         public StreetNameListItemResponse(
