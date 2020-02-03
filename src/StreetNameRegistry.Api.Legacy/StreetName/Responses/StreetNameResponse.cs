@@ -10,7 +10,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
     using Infrastructure.Options;
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Options;
-    using Projections.Legacy.StreetNameDetail;
+    using Newtonsoft.Json;
     using Swashbuckle.AspNetCore.Filters;
     using ProblemDetails = Be.Vlaanderen.Basisregisters.BasicApiProblem.ProblemDetails;
 
@@ -21,30 +21,35 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         /// De identificator van de straatnaam.
         /// </summary>
         [DataMember(Name = "Identificator", Order = 1)]
+        [JsonProperty(Required = Required.DisallowNull)]
         public StraatnaamIdentificator Identificator { get; set; }
 
         /// <summary>
         /// De gemeente aan dewelke de straatnaam is toegewezen.
         /// </summary>
         [DataMember(Name = "Gemeente", Order = 2)]
+        [JsonProperty(Required = Required.DisallowNull)]
         public StraatnaamDetailGemeente Gemeente { get; set; }
 
         /// <summary>
         /// De straatnaam in verschillende talen.
         /// </summary>
         [DataMember(Name = "Straatnamen", Order = 3)]
+        [JsonProperty(Required = Required.DisallowNull)]
         public List<GeografischeNaam> Straatnamen { get; set; }
 
         /// <summary>
         /// De homoniem-toevoegingen aan de straatnaam in verschillende talen.
         /// </summary>
         [DataMember(Name = "HomoniemToevoegingen", Order = 4)]
+        [JsonProperty(Required = Required.DisallowNull)]
         public List<GeografischeNaam> HomoniemToevoegingen { get; set; }
 
         /// <summary>
         /// De huidige fase in de levensloop van een straatnaam.
         /// </summary>
         [DataMember(Name = "StraatnaamStatus", Order = 5)]
+        [JsonProperty(Required = Required.DisallowNull)]
         public StraatnaamStatus StraatnaamStatus { get; set; }
 
         public StreetNameResponse(

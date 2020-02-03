@@ -8,6 +8,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using Newtonsoft.Json;
 
     [DataContract(Name = "StraatnaamCollectie", Namespace = "")]
     public class StreetNameListResponse
@@ -16,18 +17,21 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         /// De verzameling van straatnamen.
         /// </summary>
         [DataMember(Name = "Straatnamen", Order = 1)]
+        [JsonProperty(Required = Required.DisallowNull)]
         public List<StreetNameListItemResponse> Straatnamen { get; set; }
 
         /// <summary>
         /// Het totaal aantal gemeenten die overeenkomen met de vraag.
         /// </summary>
         [DataMember(Name = "TotaalAantal", Order = 2)]
+        [JsonProperty(Required = Required.DisallowNull)]
         public long TotaalAantal { get; set; }
 
         /// <summary>
         /// De URL voor het ophalen van de volgende verzameling.
         /// </summary>
         [DataMember(Name = "Volgende", Order = 3, EmitDefaultValue = false)]
+        [JsonProperty(Required = Required.DisallowNull)]
         public Uri Volgende { get; set; }
     }
 
@@ -38,24 +42,28 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Responses
         /// De identificator van de straatnaam.
         /// </summary>
         [DataMember(Name = "Identificator", Order = 1)]
+        [JsonProperty(Required = Required.DisallowNull)]
         public StraatnaamIdentificator Identificator { get; set; }
 
         /// <summary>
         /// De URL die naar de details van de meeste recente versie van een enkele straatnaam leidt.
         /// </summary>
         [DataMember(Name = "Detail", Order = 2)]
+        [JsonProperty(Required = Required.DisallowNull)]
         public Uri Detail { get; set; }
 
         /// <summary>
         /// De straatnaam in het Nederlands.
         /// </summary>
         [DataMember(Name = "Straatnaam", Order = 3)]
+        [JsonProperty(Required = Required.DisallowNull)]
         public Straatnaam Straatnaam { get; set; }
 
         /// <summary>
         /// De homoniemtoevoeging in het Nederlands.
         /// </summary>
         [DataMember(Name = "HomoniemToevoeging", Order = 4)]
+        [JsonProperty(Required = Required.DisallowNull)]
         public HomoniemToevoeging HomoniemToevoeging { get; set; }
 
         public StreetNameListItemResponse(
