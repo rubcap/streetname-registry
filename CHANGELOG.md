@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.0...v2.4.1) (2020-02-03)
+
+
+### Bug Fixes
+
+* specify non nullable responses ([7330a61](https://github.com/informatievlaanderen/streetname-registry/commit/7330a61))
+
 # [2.4.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.3.2...v2.4.0) (2020-02-01)
 
 
