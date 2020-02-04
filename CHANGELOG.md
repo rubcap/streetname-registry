@@ -1,3 +1,10 @@
+## [2.4.4](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.3...v2.4.4) (2020-02-04)
+
+
+### Bug Fixes
+
+* instance uri for error examples now show correctly ([6da02d0](https://github.com/informatievlaanderen/streetname-registry/commit/6da02d0))
+
 ## [2.4.3](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.2...v2.4.3) (2020-02-03)
 
 
