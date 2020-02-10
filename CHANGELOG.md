@@ -1,3 +1,10 @@
+## [2.4.5](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.4...v2.4.5) (2020-02-10)
+
+
+### Bug Fixes
+
+* JSON default value for nullable fields ([0e297d5](https://github.com/informatievlaanderen/streetname-registry/commit/0e297d5))
+
 ## [2.4.4](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.3...v2.4.4) (2020-02-04)
 
 
