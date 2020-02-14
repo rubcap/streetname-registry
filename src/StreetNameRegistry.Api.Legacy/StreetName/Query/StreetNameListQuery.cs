@@ -29,7 +29,7 @@ namespace StreetNameRegistry.Api.Legacy.StreetName.Query
             var streetNames = _legacyContext
                 .StreetNameList
                 .AsNoTracking()
-                .Where(s => !s.Removed && s.Complete);
+                .Where(s => !s.Removed && s.Complete && s.PersistentLocalId != null);
 
             if (!filtering.ShouldFilter)
                 return streetNames;

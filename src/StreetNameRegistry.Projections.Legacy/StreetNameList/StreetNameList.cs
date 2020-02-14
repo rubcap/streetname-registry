@@ -78,6 +78,7 @@ namespace StreetNameRegistry.Projections.Legacy.StreetNameList
 
             // This index speeds up the hardcoded first filter in StreetNameListQuery
             builder.HasIndex(x => new { x.Complete, x.Removed });
+            builder.HasIndex(x => new { x.Complete, x.Removed, x.PersistentLocalId });
         }
     }
 }
