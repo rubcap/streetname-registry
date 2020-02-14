@@ -1,3 +1,10 @@
+## [2.4.6](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.5...v2.4.6) (2020-02-14)
+
+
+### Bug Fixes
+
+* add list index ([d71ffd5](https://github.com/informatievlaanderen/streetname-registry/commit/d71ffd5))
+
 ## [2.4.5](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.4...v2.4.5) (2020-02-10)
 
 
