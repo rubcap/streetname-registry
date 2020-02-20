@@ -1,3 +1,10 @@
+## [2.4.9](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.8...v2.4.9) (2020-02-20)
+
+
+### Bug Fixes
+
+* update grar common ([2af230f](https://github.com/informatievlaanderen/streetname-registry/commit/2af230f))
+
 ## [2.4.8](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.7...v2.4.8) (2020-02-19)
 
 
