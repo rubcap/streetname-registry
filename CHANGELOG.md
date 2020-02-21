@@ -1,3 +1,10 @@
+## [2.4.10](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.9...v2.4.10) (2020-02-21)
+
+
+### Performance Improvements
+
+* increase performance by removing count from lists ([2212fd2](https://github.com/informatievlaanderen/streetname-registry/commit/2212fd2))
+
 ## [2.4.9](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.8...v2.4.9) (2020-02-20)
 
 
