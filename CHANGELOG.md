@@ -1,3 +1,10 @@
+## [2.4.11](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.10...v2.4.11) (2020-02-24)
+
+
+### Bug Fixes
+
+* update projection handling & update sync migrator ([92029bd](https://github.com/informatievlaanderen/streetname-registry/commit/92029bd))
+
 ## [2.4.10](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.9...v2.4.10) (2020-02-21)
 
 
