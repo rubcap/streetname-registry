@@ -1,3 +1,10 @@
+## [2.4.12](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.11...v2.4.12) (2020-02-26)
+
+
+### Bug Fixes
+
+* increase bosa result size to 1001 ([ea102c3](https://github.com/informatievlaanderen/streetname-registry/commit/ea102c3))
+
 ## [2.4.11](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.10...v2.4.11) (2020-02-24)
 
 
