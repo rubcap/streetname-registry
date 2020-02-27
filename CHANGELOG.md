@@ -1,3 +1,10 @@
+## [2.4.13](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.12...v2.4.13) (2020-02-27)
+
+
+### Bug Fixes
+
+* update json serialization dependencies ([a8ab6e7](https://github.com/informatievlaanderen/streetname-registry/commit/a8ab6e7))
+
 ## [2.4.12](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.11...v2.4.12) (2020-02-26)
 
 
