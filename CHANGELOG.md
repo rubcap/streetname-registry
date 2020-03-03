@@ -1,3 +1,11 @@
+## [2.4.14](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.13...v2.4.14) (2020-03-03)
+
+
+### Bug Fixes
+
+* bump netcore 3.1.2 ([49b5880](https://github.com/informatievlaanderen/streetname-registry/commit/49b5880))
+* update dockerid detection ([637ed8d](https://github.com/informatievlaanderen/streetname-registry/commit/637ed8d))
+
 ## [2.4.13](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.12...v2.4.13) (2020-02-27)
 
 
