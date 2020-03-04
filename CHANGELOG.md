@@ -1,3 +1,10 @@
+## [2.4.15](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.14...v2.4.15) (2020-03-04)
+
+
+### Bug Fixes
+
+* bump netcore dockerfiles ([e08f517](https://github.com/informatievlaanderen/streetname-registry/commit/e08f517))
+
 ## [2.4.14](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.13...v2.4.14) (2020-03-03)
 
 
