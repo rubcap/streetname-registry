@@ -1,3 +1,10 @@
+## [2.4.16](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.15...v2.4.16) (2020-03-05)
+
+
+### Bug Fixes
+
+* update grar common to fix provenance ([c63f2a7](https://github.com/informatievlaanderen/streetname-registry/commit/c63f2a7))
+
 ## [2.4.15](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.14...v2.4.15) (2020-03-04)
 
 
