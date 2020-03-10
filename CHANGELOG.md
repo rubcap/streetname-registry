@@ -1,3 +1,10 @@
+# [2.5.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.16...v2.5.0) (2020-03-10)
+
+
+### Features
+
+* add totaal aantal endpoint ([cf348b5](https://github.com/informatievlaanderen/streetname-registry/commit/cf348b5))
+
 ## [2.4.16](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.15...v2.4.16) (2020-03-05)
 
 
