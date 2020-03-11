@@ -1,3 +1,10 @@
+## [2.5.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.5.0...v2.5.1) (2020-03-11)
+
+
+### Bug Fixes
+
+* count streetname now counts correctly when filtered ([313e952](https://github.com/informatievlaanderen/streetname-registry/commit/313e952))
+
 # [2.5.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.4.16...v2.5.0) (2020-03-10)
 
 
