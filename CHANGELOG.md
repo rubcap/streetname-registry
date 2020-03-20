@@ -1,3 +1,10 @@
+## [2.7.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.7.1...v2.7.2) (2020-03-20)
+
+
+### Bug Fixes
+
+* update grar import package ([48a4d18](https://github.com/informatievlaanderen/streetname-registry/commit/48a4d18))
+
 ## [2.7.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.7.0...v2.7.1) (2020-03-19)
 
 
