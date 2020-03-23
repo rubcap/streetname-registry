@@ -1,3 +1,11 @@
+## [2.7.3](https://github.com/informatievlaanderen/streetname-registry/compare/v2.7.2...v2.7.3) (2020-03-23)
+
+
+### Bug Fixes
+
+* update grar common to fix versie id type ([7d4a7b1](https://github.com/informatievlaanderen/streetname-registry/commit/7d4a7b1))
+* versie id type change to string for sync resources ([4e70471](https://github.com/informatievlaanderen/streetname-registry/commit/4e70471))
+
 ## [2.7.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.7.1...v2.7.2) (2020-03-20)
 
 
