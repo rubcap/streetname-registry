@@ -1,3 +1,10 @@
+## [2.7.4](https://github.com/informatievlaanderen/streetname-registry/compare/v2.7.3...v2.7.4) (2020-03-27)
+
+
+### Bug Fixes
+
+* set sync feed dates to belgian timezone ([cb6e2bc](https://github.com/informatievlaanderen/streetname-registry/commit/cb6e2bc))
+
 ## [2.7.3](https://github.com/informatievlaanderen/streetname-registry/compare/v2.7.2...v2.7.3) (2020-03-23)
 
 
