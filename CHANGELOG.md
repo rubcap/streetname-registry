@@ -1,3 +1,10 @@
+# [2.8.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.7.4...v2.8.0) (2020-04-03)
+
+
+### Features
+
+* upgrade projection handling to include errmessage lastchangedlist ([b8850ae](https://github.com/informatievlaanderen/streetname-registry/commit/b8850ae))
+
 ## [2.7.4](https://github.com/informatievlaanderen/streetname-registry/compare/v2.7.3...v2.7.4) (2020-03-27)
 
 
