@@ -1,3 +1,10 @@
+## [2.8.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.0...v2.8.1) (2020-04-06)
+
+
+### Bug Fixes
+
+* set name for importer feedname ([f588e29](https://github.com/informatievlaanderen/streetname-registry/commit/f588e29))
+
 # [2.8.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.7.4...v2.8.0) (2020-04-03)
 
 
