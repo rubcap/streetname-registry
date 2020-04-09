@@ -1,3 +1,10 @@
+## [2.8.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.1...v2.8.2) (2020-04-09)
+
+
+### Bug Fixes
+
+* update packages for import batch timestamps ([ee62c56](https://github.com/informatievlaanderen/streetname-registry/commit/ee62c56))
+
 ## [2.8.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.0...v2.8.1) (2020-04-06)
 
 
