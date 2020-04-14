@@ -1,3 +1,10 @@
+## [2.8.5](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.4...v2.8.5) (2020-04-14)
+
+
+### Bug Fixes
+
+* update import packages ([cd03b79](https://github.com/informatievlaanderen/streetname-registry/commit/cd03b79))
+
 ## [2.8.4](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.3...v2.8.4) (2020-04-10)
 
 
