@@ -51,7 +51,8 @@ namespace StreetNameRegistry.Importer.Console.Crab
                     .AddRangeTo(straatnaamIds);
             }
 
-            return straatnaamIds                .Distinct()
+            return straatnaamIds
+                .Distinct()
                 .ToList();
         }
     }
