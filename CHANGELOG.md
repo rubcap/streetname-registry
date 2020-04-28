@@ -1,3 +1,10 @@
+## [2.8.7](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.6...v2.8.7) (2020-04-28)
+
+
+### Bug Fixes
+
+* update grar dependencies GRAR-412 ([155a7db](https://github.com/informatievlaanderen/streetname-registry/commit/155a7db))
+
 ## [2.8.6](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.5...v2.8.6) (2020-04-14)
 
 
