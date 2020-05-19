@@ -1,3 +1,10 @@
+## [2.8.8](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.7...v2.8.8) (2020-05-19)
+
+
+### Bug Fixes
+
+* move to 3.1.4 and gh-actions ([59f5c6c](https://github.com/informatievlaanderen/streetname-registry/commit/59f5c6c8c4841802ecb0f3ac7b250bf3a18e3d58))
+
 ## [2.8.7](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.6...v2.8.7) (2020-04-28)
 
 
