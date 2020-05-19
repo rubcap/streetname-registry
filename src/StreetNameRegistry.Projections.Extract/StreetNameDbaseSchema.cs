@@ -14,13 +14,13 @@ namespace StreetNameRegistry.Projections.Extract
 
         public StreetNameDbaseSchema() => Fields = new[]
         {
-            DbaseField.CreateStringField(new DbaseFieldName(nameof(id)), new DbaseFieldLength(50)),
-            DbaseField.CreateInt32Field(new DbaseFieldName(nameof(straatnmid)), new DbaseFieldLength(10)),
-            DbaseField.CreateStringField(new DbaseFieldName(nameof(versieid)), new DbaseFieldLength(25)),
-            DbaseField.CreateStringField(new DbaseFieldName(nameof(gemeenteid)), new DbaseFieldLength(5)),
-            DbaseField.CreateStringField(new DbaseFieldName(nameof(straatnm)), new DbaseFieldLength(80)),
-            DbaseField.CreateStringField(new DbaseFieldName(nameof(homoniemtv)), new DbaseFieldLength(5)),
-            DbaseField.CreateStringField(new DbaseFieldName(nameof(status)), new DbaseFieldLength(50))
+            DbaseField.CreateCharacterField(new DbaseFieldName(nameof(id)), new DbaseFieldLength(50)),
+            DbaseField.CreateNumberField(new DbaseFieldName(nameof(straatnmid)), new DbaseFieldLength(10), new DbaseDecimalCount(0)),
+            DbaseField.CreateCharacterField(new DbaseFieldName(nameof(versieid)), new DbaseFieldLength(25)),
+            DbaseField.CreateCharacterField(new DbaseFieldName(nameof(gemeenteid)), new DbaseFieldLength(5)),
+            DbaseField.CreateCharacterField(new DbaseFieldName(nameof(straatnm)), new DbaseFieldLength(80)),
+            DbaseField.CreateCharacterField(new DbaseFieldName(nameof(homoniemtv)), new DbaseFieldLength(5)),
+            DbaseField.CreateCharacterField(new DbaseFieldName(nameof(status)), new DbaseFieldLength(50))
         };
     }
 }
