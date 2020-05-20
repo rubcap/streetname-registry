@@ -1,3 +1,10 @@
+## [2.8.9](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.8...v2.8.9) (2020-05-20)
+
+
+### Bug Fixes
+
+* add build badge ([310bc9e](https://github.com/informatievlaanderen/streetname-registry/commit/310bc9eec2b32d47d21152aa8d385ea1a8af62b6))
+
 ## [2.8.8](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.7...v2.8.8) (2020-05-19)
 
 
