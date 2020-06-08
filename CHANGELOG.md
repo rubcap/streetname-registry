@@ -1,3 +1,10 @@
+## [2.8.11](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.10...v2.8.11) (2020-06-08)
+
+
+### Bug Fixes
+
+* build msil version for public api ([1e21df7](https://github.com/informatievlaanderen/streetname-registry/commit/1e21df71eaeb6f4dcca39aad47140155f35c3231))
+
 ## [2.8.10](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.9...v2.8.10) (2020-05-29)
 
 
