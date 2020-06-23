@@ -1,3 +1,10 @@
+## [2.8.14](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.13...v2.8.14) (2020-06-23)
+
+
+### Bug Fixes
+
+* configure baseurls for all problemdetails GRAR-1357 ([ee0043c](https://github.com/informatievlaanderen/streetname-registry/commit/ee0043c90c4ccda5761e54d65670cc482a5e6276))
+
 ## [2.8.13](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.12...v2.8.13) (2020-06-22)
 
 
