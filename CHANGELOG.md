@@ -1,3 +1,10 @@
+## [2.8.15](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.14...v2.8.15) (2020-06-30)
+
+
+### Bug Fixes
+
+* remove offset and add from to next uri GRAR-1418 ([b1669ad](https://github.com/informatievlaanderen/streetname-registry/commit/b1669ade3342a1fbed32ab1c0affa0278b429936))
+
 ## [2.8.14](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.13...v2.8.14) (2020-06-23)
 
 
