@@ -1,3 +1,10 @@
+# [2.9.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.15...v2.9.0) (2020-07-01)
+
+
+### Features
+
+* refactor metadata for atom feed-metadata GRAR-1436 GRAR-1445 GRAR-1453 GRAR-1455 ([b24b12f](https://github.com/informatievlaanderen/streetname-registry/commit/b24b12fcec061b9c1852527bf02f9f2191780556))
+
 ## [2.8.15](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.14...v2.8.15) (2020-06-30)
 
 
