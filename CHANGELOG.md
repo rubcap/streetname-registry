@@ -1,3 +1,13 @@
+## [2.9.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.9.0...v2.9.1) (2020-07-03)
+
+
+### Bug Fixes
+
+* add SyndicationItemCreatedAt GRAR-1442 ([284f5a2](https://github.com/informatievlaanderen/streetname-registry/commit/284f5a2755947f0b92f47f63508099782276f67e))
+* get updated value from projections GRAR-1442 ([9e19a4d](https://github.com/informatievlaanderen/streetname-registry/commit/9e19a4dcd8a623655f8f8f7899968947b00fb62a))
+* run CI only on InformatiaVlaanderen repo ([f4cd78e](https://github.com/informatievlaanderen/streetname-registry/commit/f4cd78e208fad6ff930d66c4f24fdfeabaf12b5e))
+* update dependencies ([90b69e7](https://github.com/informatievlaanderen/streetname-registry/commit/90b69e76594d7810e161cc21b0d72b7fb4ca99aa))
+
 # [2.9.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.8.15...v2.9.0) (2020-07-01)
 
 
