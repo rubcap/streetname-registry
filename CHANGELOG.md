@@ -1,3 +1,10 @@
+## [2.9.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.9.1...v2.9.2) (2020-07-03)
+
+
+### Bug Fixes
+
+* correct migration script GRAR-1442 ([70710cf](https://github.com/informatievlaanderen/streetname-registry/commit/70710cfaa9f932e0261878f29cc7e8944b60048e))
+
 ## [2.9.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.9.0...v2.9.1) (2020-07-03)
 
 
