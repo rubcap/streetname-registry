@@ -1,3 +1,10 @@
+## [2.9.3](https://github.com/informatievlaanderen/streetname-registry/compare/v2.9.2...v2.9.3) (2020-07-10)
+
+
+### Bug Fixes
+
+* enums were not correctly serialized in syndication event GRAR-1490 ([107d1ac](https://github.com/informatievlaanderen/streetname-registry/commit/107d1ac9060be513aed2c8a2592368f61a0287d3))
+
 ## [2.9.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.9.1...v2.9.2) (2020-07-03)
 
 
