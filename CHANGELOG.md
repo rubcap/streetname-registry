@@ -1,3 +1,10 @@
+## [2.9.4](https://github.com/informatievlaanderen/streetname-registry/compare/v2.9.3...v2.9.4) (2020-07-10)
+
+
+### Bug Fixes
+
+* correct author, entry links atom feed + example GRAR-1443 GRAR-1447 ([0f040ee](https://github.com/informatievlaanderen/streetname-registry/commit/0f040eefa5065e2690255960e99d2f70ffa3a9d6))
+
 ## [2.9.3](https://github.com/informatievlaanderen/streetname-registry/compare/v2.9.2...v2.9.3) (2020-07-10)
 
 
