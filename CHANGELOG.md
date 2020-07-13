@@ -1,3 +1,11 @@
+## [2.9.5](https://github.com/informatievlaanderen/streetname-registry/compare/v2.9.4...v2.9.5) (2020-07-13)
+
+
+### Bug Fixes
+
+* update dependencies ([e0047f0](https://github.com/informatievlaanderen/streetname-registry/commit/e0047f08c05023577e201705d5e16baeecf7b048))
+* use typed embed value GRAR-1465 ([948f242](https://github.com/informatievlaanderen/streetname-registry/commit/948f242c6d95f8273b44cd47b05119f463d71993))
+
 ## [2.9.4](https://github.com/informatievlaanderen/streetname-registry/compare/v2.9.3...v2.9.4) (2020-07-10)
 
 
