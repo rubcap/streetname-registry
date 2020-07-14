@@ -1,3 +1,10 @@
+# [2.10.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.9.5...v2.10.0) (2020-07-14)
+
+
+### Features
+
+* add timestamp to sync provenance GRAR-1451 ([1b069bc](https://github.com/informatievlaanderen/streetname-registry/commit/1b069bc08ef02a822f9daecc0f10b36b244c627d))
+
 ## [2.9.5](https://github.com/informatievlaanderen/streetname-registry/compare/v2.9.4...v2.9.5) (2020-07-13)
 
 
