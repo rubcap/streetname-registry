@@ -1,3 +1,10 @@
+## [2.10.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.1...v2.10.2) (2020-09-02)
+
+
+### Bug Fixes
+
+* upgarde common to fix sync author ([912d1f0](https://github.com/informatievlaanderen/streetname-registry/commit/912d1f0dc27d625d7ddec8f78f686ebf0d2e83a5))
+
 ## [2.10.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.0...v2.10.1) (2020-07-19)
 
 
