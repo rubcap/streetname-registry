@@ -1,3 +1,10 @@
+## [2.10.3](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.2...v2.10.3) (2020-09-03)
+
+
+### Bug Fixes
+
+* null organisation defaults to unknown ([9395ebb](https://github.com/informatievlaanderen/streetname-registry/commit/9395ebbc768247904b188db2f337c46738e4cbf4))
+
 ## [2.10.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.1...v2.10.2) (2020-09-02)
 
 
