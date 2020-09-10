@@ -1,3 +1,10 @@
+## [2.10.4](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.3...v2.10.4) (2020-09-10)
+
+
+### Bug Fixes
+
+* add generator version GRAR-1540 ([b0ee494](https://github.com/informatievlaanderen/streetname-registry/commit/b0ee4942140665cf8f7e3d5dd9123e0ea96e5fb8))
+
 ## [2.10.3](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.2...v2.10.3) (2020-09-03)
 
 
