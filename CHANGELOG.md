@@ -1,3 +1,10 @@
+## [2.10.6](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.5...v2.10.6) (2020-09-11)
+
+
+### Bug Fixes
+
+* remove Modification from xml GRAR-1529 ([4b85dc7](https://github.com/informatievlaanderen/streetname-registry/commit/4b85dc768d91b086bc500c0ae2fd5edec8f79733))
+
 ## [2.10.5](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.4...v2.10.5) (2020-09-11)
 
 
