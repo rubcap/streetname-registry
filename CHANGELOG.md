@@ -1,3 +1,10 @@
+## [2.10.5](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.4...v2.10.5) (2020-09-11)
+
+
+### Bug Fixes
+
+* update packages to fix null operator/reason GRAR-1535 ([1b43cfa](https://github.com/informatievlaanderen/streetname-registry/commit/1b43cfa854177829815a820ed277f3e7960612e9))
+
 ## [2.10.4](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.3...v2.10.4) (2020-09-10)
 
 
