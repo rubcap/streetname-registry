@@ -1,0 +1,37 @@
+version: 2
+
+updates:
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: daily
+
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+
+- package-ecosystem: docker
+  directory: "/src/StreetNameRegistry.Api.CrabImport"
+  schedule:
+    interval: daily
+
+- package-ecosystem: docker
+  directory: "/src/StreetNameRegistry.Api.Extract"
+  schedule:
+    interval: daily
+
+- package-ecosystem: docker
+  directory: "/src/StreetNameRegistry.Api.Legacy"
+  schedule:
+    interval: daily
+
+- package-ecosystem: docker
+  directory: "/src/StreetNameRegistry.Projections.Syndication"
+  schedule:
+    interval: daily
+
+- package-ecosystem: docker
+  directory: "/src/StreetNameRegistry.Projector"
+  schedule:
+    interval: daily
