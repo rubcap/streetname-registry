@@ -1,3 +1,10 @@
+# [2.11.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.7...v2.11.0) (2020-09-22)
+
+
+### Features
+
+* add import status endpoint GRAR-1400 ([c26fa70](https://github.com/informatievlaanderen/streetname-registry/commit/c26fa700ee5a73e91e7922701fe4c0898997cf16))
+
 ## [2.10.7](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.6...v2.10.7) (2020-09-22)
 
 
