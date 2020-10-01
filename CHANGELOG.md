@@ -1,3 +1,10 @@
+# [2.12.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.11.0...v2.12.0) (2020-10-01)
+
+
+### Features
+
+* add cache status to projector api ([ecbc48d](https://github.com/informatievlaanderen/streetname-registry/commit/ecbc48d0c1bc24d4ef5972d3cdfbc692ee795650))
+
 # [2.11.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.10.7...v2.11.0) (2020-09-22)
 
 
