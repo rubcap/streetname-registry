@@ -1,3 +1,10 @@
+## [2.12.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.12.0...v2.12.1) (2020-10-05)
+
+
+### Bug Fixes
+
+* run projection using the feedprojector GRAR-1562 ([23a551a](https://github.com/informatievlaanderen/streetname-registry/commit/23a551a57ac4995d46e07d5c22744b0ddc82152c))
+
 # [2.12.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.11.0...v2.12.0) (2020-10-01)
 
 
