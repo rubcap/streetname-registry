@@ -1,3 +1,10 @@
+# [2.13.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.12.1...v2.13.0) (2020-10-13)
+
+
+### Features
+
+* add status to legacy list ([20c741c](https://github.com/informatievlaanderen/streetname-registry/commit/20c741cd12742cc2fd02e12eb826ec902942d8d5))
+
 ## [2.12.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.12.0...v2.12.1) (2020-10-05)
 
 
