@@ -1,3 +1,10 @@
+## [2.13.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.13.0...v2.13.1) (2020-10-14)
+
+
+### Bug Fixes
+
+* correct merge statement in migration AddStatusList ([48342e9](https://github.com/informatievlaanderen/streetname-registry/commit/48342e9c24b3d21559b562d712d4eadcb766d49d))
+
 # [2.13.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.12.1...v2.13.0) (2020-10-13)
 
 
