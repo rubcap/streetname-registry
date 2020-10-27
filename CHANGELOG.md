@@ -1,3 +1,10 @@
+# [2.15.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.14.0...v2.15.0) (2020-10-27)
+
+
+### Features
+
+* add error message for syndication projections ([4b19b50](https://github.com/informatievlaanderen/streetname-registry/commit/4b19b506c5af12cdaa4a846d6938a5261e3440f4))
+
 # [2.14.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.13.1...v2.14.0) (2020-10-27)
 
 
