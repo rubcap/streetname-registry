@@ -1,3 +1,10 @@
+# [2.14.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.13.1...v2.14.0) (2020-10-27)
+
+
+### Features
+
+* update projector with gap detection and extended status api ([ac8d5ce](https://github.com/informatievlaanderen/streetname-registry/commit/ac8d5ce0af2eeb674df1c4cf07fb958c403cf362))
+
 ## [2.13.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.13.0...v2.13.1) (2020-10-14)
 
 
