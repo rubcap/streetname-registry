@@ -1,3 +1,10 @@
+## [2.15.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.15.0...v2.15.1) (2020-11-04)
+
+
+### Bug Fixes
+
+* correct homonymaddition for object in sync api GRAR-1626 ([d9d3e31](https://github.com/informatievlaanderen/streetname-registry/commit/d9d3e314b1c8d9d44f7c2ffe026054ed2a75ae05))
+
 # [2.15.0](https://github.com/informatievlaanderen/streetname-registry/compare/v2.14.0...v2.15.0) (2020-10-27)
 
 
