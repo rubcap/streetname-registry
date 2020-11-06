@@ -1,3 +1,15 @@
+## [2.15.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.15.1...v2.15.2) (2020-11-06)
+
+
+### Bug Fixes
+
+* logging ([cacf938](https://github.com/informatievlaanderen/streetname-registry/commit/cacf9388d5279e33805a6836164fe59650e2bf9b))
+* logging ([655a5e3](https://github.com/informatievlaanderen/streetname-registry/commit/655a5e3078da70356e79a8e3cbb0ae68178736e9))
+* logging ([73b7615](https://github.com/informatievlaanderen/streetname-registry/commit/73b76157dc67ae7da85419e7bae72f11948c9fff))
+* logging ([93697bc](https://github.com/informatievlaanderen/streetname-registry/commit/93697bcb4a0641c2d17d1cd6f70873e1be573022))
+* logging ([d9e7321](https://github.com/informatievlaanderen/streetname-registry/commit/d9e73215440833c0b24410a91ba0882756a3e696))
+* logging ([e96a710](https://github.com/informatievlaanderen/streetname-registry/commit/e96a7108434d370bcb3ff9cf69139034a3872a21))
+
 ## [2.15.1](https://github.com/informatievlaanderen/streetname-registry/compare/v2.15.0...v2.15.1) (2020-11-04)
 
 
