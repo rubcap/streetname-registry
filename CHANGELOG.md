@@ -1,3 +1,11 @@
+## [2.15.3](https://github.com/informatievlaanderen/streetname-registry/compare/v2.15.2...v2.15.3) (2020-11-13)
+
+
+### Bug Fixes
+
+* display sync response example as correct xml GRAR-1599 ([6128480](https://github.com/informatievlaanderen/streetname-registry/commit/61284806d5c829ab1eeeccd4aa41d8005a014098))
+* upgrade swagger GRAR-1599 ([70906f6](https://github.com/informatievlaanderen/streetname-registry/commit/70906f664c6da2d3defc51646d67487f82dcbd40))
+
 ## [2.15.2](https://github.com/informatievlaanderen/streetname-registry/compare/v2.15.1...v2.15.2) (2020-11-06)
 
 
