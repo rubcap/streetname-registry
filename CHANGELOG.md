@@ -1,3 +1,11 @@
+## [2.15.4](https://github.com/informatievlaanderen/streetname-registry/compare/v2.15.3...v2.15.4) (2020-11-19)
+
+
+### Bug Fixes
+
+* remove set-env usage in gh-actions ([a7ef9ea](https://github.com/informatievlaanderen/streetname-registry/commit/a7ef9eabde5230de613d16fe619f7415da06c33c))
+* update references for event property descriptions ([6e9bf93](https://github.com/informatievlaanderen/streetname-registry/commit/6e9bf93d99750b01930474099d81657b13f25b0d))
+
 ## [2.15.3](https://github.com/informatievlaanderen/streetname-registry/compare/v2.15.2...v2.15.3) (2020-11-13)
 
 
