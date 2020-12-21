@@ -1,3 +1,10 @@
+## [2.15.5](https://github.com/informatievlaanderen/streetname-registry/compare/v2.15.4...v2.15.5) (2020-12-21)
+
+
+### Bug Fixes
+
+* move to 5.0.1 ([c5d4b92](https://github.com/informatievlaanderen/streetname-registry/commit/c5d4b92787a47d6805121e7e6568b83b1b1fef01))
+
 ## [2.15.4](https://github.com/informatievlaanderen/streetname-registry/compare/v2.15.3...v2.15.4) (2020-11-19)
 
 
