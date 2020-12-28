@@ -1,3 +1,10 @@
+## [2.15.6](https://github.com/informatievlaanderen/streetname-registry/compare/v2.15.5...v2.15.6) (2020-12-28)
+
+
+### Bug Fixes
+
+* update basisregisters api dependency ([3b162eb](https://github.com/informatievlaanderen/streetname-registry/commit/3b162eb6369788505e11857182ce2b0d2e69f927))
+
 ## [2.15.5](https://github.com/informatievlaanderen/streetname-registry/compare/v2.15.4...v2.15.5) (2020-12-21)
 
 
